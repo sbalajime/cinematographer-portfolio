@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 
 import AboutMe from './components/AboutMe/AboutMe';
 import Gallery from './components/Gallery/Gallery';
@@ -10,11 +10,11 @@ import ShortFilm from './components/ShortFilm/ShortFilm';
 
 const Links = () => {
 	return(
-	<div>
-		<Link to='/'>Home</Link>
-		<Link to='/gallery'>Gallery</Link>
-		<Link to='/short-films'>Short Films</Link>
-		<Link to='/aboutme'>About Me</Link>
+	<div style={styles.menu}>
+		<NavLink exact to='/' activeStyle={styles.activeLink} style={styles.menuItems}>Home</NavLink>
+		<NavLink to='/gallery' activeStyle={styles.activeLink} style={styles.menuItems}>Gallery</NavLink>
+		<NavLink to='/short-films' activeStyle={styles.activeLink} style={styles.menuItems}>Short Films</NavLink>
+		<NavLink to='/aboutme' activeStyle={styles.activeLink} style={styles.menuItems}>About Me</NavLink>
 	</div>)
 }
 class App extends Component {
@@ -35,4 +35,25 @@ class App extends Component {
   }
 }
 
+const styles = {
+	menu:{
+		display: 'flex',
+		justifyContent:'flex-end',
+		fontFamily: 'Fjalla One',
+		fontWeight: 500,
+		fontSize: 35,
+		marginTop: 20,
+		color: '#1a8b77',
+		textDecoration: 'none' 
+	},
+	menuItems:{
+		marginRight:25,
+		color: '#1a8b77 !important',
+		textDecoration: 'none !important'
+	
+	},
+	activeStyle:{
+		color: 'red'
+	}
+}
 export default App;
