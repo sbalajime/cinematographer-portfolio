@@ -10,11 +10,11 @@ import ShortFilm from './components/ShortFilm/ShortFilm';
 
 const Links = () => {
 	return(
-	<div style={styles.menu}>
-		<NavLink exact to='/' activeStyle={styles.activeLink} style={styles.menuItems}>Home</NavLink>
-		<NavLink to='/gallery' activeStyle={styles.activeLink} style={styles.menuItems}>Gallery</NavLink>
-		<NavLink to='/short-films' activeStyle={styles.activeLink} style={styles.menuItems}>Short Films</NavLink>
-		<NavLink to='/aboutme' activeStyle={styles.activeLink} style={styles.menuItems}>About Me</NavLink>
+	<div style={styles.menu} className='links'>
+		<NavLink activeStyle={{color: 'red'}} style={{ color:'black'}} exact to='/'>Home</NavLink>
+		<NavLink activeStyle={{color: 'red'}} style={{ color:'black'}} exact to='/gallery'>Gallery</NavLink>
+		<NavLink activeStyle={{color: 'red'}} style={{ color:'black'}} exact to='/short-films'>Short Films</NavLink>
+		<NavLink activeStyle={{color: 'red'}} style={{ color:'black'}} exact to='/aboutme'>About Me</NavLink>
 	</div>)
 }
 class App extends Component {
@@ -42,8 +42,7 @@ const styles = {
 		fontFamily: 'Fjalla One',
 		fontWeight: 500,
 		fontSize: 35,
-		marginTop: 20,
-		color: '#1a8b77',
+		paddingTop: 20,
 		textDecoration: 'none' 
 	},
 	menuItems:{
