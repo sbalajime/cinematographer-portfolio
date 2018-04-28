@@ -1,16 +1,7 @@
 import React, {Component} from 'react';
-import YouTube from 'react-youtube';
 import _map from 'lodash/map';
 
 import shortFilms from '../VideoData/data';
-
-const opts = {
-    height: '240',
-    width: '350',
-    playerVars: { // https://developers.google.com/youtube/player_parameters
-      autoplay: 1
-    }
-  };
 
 class ShortFilm extends Component {
     render(){
@@ -29,22 +20,28 @@ class ShortFilm extends Component {
                     {_map(shortFilms, film => {
                         console.log('film.id', film.videoId)
                         return(
-                            <div key={film.id} style={{marginTop: 60}}>
+                            <div 
+                                key={film.id} 
+                                style={{
+                                    backgroundColor: 'rgb(195, 195, 195)', 
+                                    textAlign:'center', 
+                                    borderRadius:25,
+                                    padding: 20,
+                                    margin: 10,
+                                    paddingTop: 32
+                                }}
+                            >
                                 <a 
                                     href={`https://www.youtube.com/watch?v=${film.videoId}`}
                                     target="_blank"
                                 >
-                                {/*<YouTube
-                                    videoId={film.videoId}
-                                    opts={opts}
-                                    onReady={this._onReady}
-                                />*/}
                                     <img 
                                         src={`https://img.youtube.com/vi/${film.videoId}/0.jpg`} 
-                                        alt="shortFilm"
+                                        style={{borderRadius:10}}
                                         height="240"
                                         width="320"
                                     />
+                                    <div style={{width:350, marginTop: 20, color:'black', fontFamily:'Fjalla One', fontSize: 20}}>{film.title}</div>
                                 </a>
                             </div>
                         )

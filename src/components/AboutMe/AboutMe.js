@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
-
+import { SocialIcon } from 'react-social-icons';
 class AboutMe extends Component {
     
     render(){
         return(
             <div style={{padding: 100}}>
-                <h1>About Me</h1>
+                <div>
+                    <img src='/selva.jpg' style={{borderRadius: '50%', verticalAlign:'middle'}} width="110" height="110" />
+                    <h1 style={{display:'inline-block', fontSize: 40, verticalAlign:'middle', marginLeft: 30}}>Yuvan Selva</h1>
+                </div>
                 <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
                     been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
                     a galley of type and scrambled it to make a type specimen book. It has survived not only 
@@ -14,6 +17,13 @@ class AboutMe extends Component {
                     passages, and more recently with desktop publishing software like Aldus PageMaker including 
                     versions of Lorem Ipsum.
                 </h3>
+                <div style={{display:'flex', justifyContent: 'flex-end'}}>
+                    <SocialIcon style={{marginLeft: 30}} url='https://twitter.com/yuvan_selva' />
+                    <SocialIcon style={{marginLeft: 30}} url='https://www.facebook.com/u1selva' />
+                    <SocialIcon style={{marginLeft: 30}} url='https://www.instagram.com/yuvanselva/'/>
+                </div>
+                
+                
             </div>
         )
     }
