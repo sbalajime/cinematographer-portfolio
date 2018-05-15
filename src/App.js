@@ -10,9 +10,9 @@ import ShortFilm from './components/ShortFilm/ShortFilm';
 const Links = () => {
 	return(
 	<div style={styles.menu} className='links'>
-		<NavLink activeStyle={{color: 'red'}} style={{ color:'black'}} exact to='/'>About Me</NavLink>
-		<NavLink activeStyle={{color: 'red'}} style={{ color:'black'}} exact to='/gallery'>Gallery</NavLink>
-		<NavLink activeStyle={{color: 'red'}} style={{ color:'black'}} exact to='/short-films'>Short Films</NavLink>
+		<NavLink activeStyle={{color: 'red'}} style={{ color:'rgb(174, 106, 224)'}} exact to='/'>About Me</NavLink>
+		<NavLink activeStyle={{color: 'red'}} style={{ color:'rgb(174, 106, 224)'}} exact to='/gallery'>Gallery</NavLink>
+		<NavLink activeStyle={{color: 'red'}} style={{ color:'rgb(174, 106, 224)'}} exact to='/short-films'>Short Films</NavLink>
 	</div>)
 }
 class App extends Component {
@@ -40,11 +40,12 @@ const styles = {
 		fontWeight: 500,
 		fontSize: 35,
 		paddingTop: 20,
+		color: '#4B0082 !important',		
 		textDecoration: 'none' 
 	},
 	menuItems:{
 		marginRight:25,
-		color: '#1a8b77 !important',
+		color: '#4B0082 !important',
 		textDecoration: 'none !important'
 	
 	},

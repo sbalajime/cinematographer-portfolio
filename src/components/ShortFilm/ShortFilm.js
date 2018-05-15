@@ -5,10 +5,8 @@ import shortFilms from '../VideoData/data';
 
 class ShortFilm extends Component {
     render(){
-        console.log('shortfilm data', shortFilms)
         return(
             <div style={{padding: 50}}>
-                <h1>These are the short films I have worked as a cinematographer.</h1>
                 <div 
                     style={{
                         display:'flex', 
@@ -25,10 +23,6 @@ class ShortFilm extends Component {
                                 style={{
                                     backgroundColor: 'rgb(195, 195, 195)', 
                                     textAlign:'center', 
-                                    borderRadius:25,
-                                    padding: 20,
-                                    margin: 10,
-                                    paddingTop: 32
                                 }}
                             >
                                 <a 
@@ -36,12 +30,12 @@ class ShortFilm extends Component {
                                     target="_blank"
                                 >
                                     <img 
-                                        src={`https://img.youtube.com/vi/${film.videoId}/0.jpg`} 
-                                        style={{borderRadius:10}}
+                                        src={`https://img.youtube.com/vi/${film.videoId}/${film.thumbnail}.jpg`} 
                                         height="240"
                                         width="320"
                                     />
-                                    <div style={{width:350, marginTop: 20, color:'black', fontFamily:'Fjalla One', fontSize: 20}}>{film.title}</div>
+                                   {// <div style={{width:350, marginTop: 20, color:'black', fontFamily:'Fjalla One', fontSize: 20}}>{film.title}</div>
+                                   }
                                 </a>
                             </div>
                         )

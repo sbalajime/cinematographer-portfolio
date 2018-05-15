@@ -6,7 +6,7 @@ class AboutMe extends Component {
         return(
             <div style={{padding: 100}}>
                 <div>
-                    <img src='/selva.jpg' style={{borderRadius: '50%', verticalAlign:'middle'}} width="110" height="110" />
+                    <img src='/selva.jpg' style={{borderRadius: '50%', verticalAlign:'middle', border:'2px solid white'}} width="110" height="110" />
                     <h1 style={{display:'inline-block', fontSize: 40, verticalAlign:'middle', marginLeft: 30}}>Yuvan Selva</h1>
                 </div>
                 <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
