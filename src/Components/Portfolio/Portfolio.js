@@ -8,12 +8,12 @@ class Portfolio extends Component {
     render(){
         return(
             <ScrollableAnchor id={'portfolio'}>
-            <div style={{ padding: 100 }}>
-                <h1>Portfolio</h1>
-                <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent:'center'}}>
-                    {_map(films, (film, index) => <Card film={film} key={index}/>)}
+                <div>
+                    <h1>Portfolio</h1>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent:'center'}}>
+                        {_map(films, (film, index) => <Card film={film} key={index}/>)}
+                    </div>
                 </div>
-            </div>
             </ScrollableAnchor>
         )
     }
