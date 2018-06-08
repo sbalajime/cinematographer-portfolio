@@ -9,7 +9,7 @@ class Portfolio extends Component {
         return(
             <ScrollableAnchor id={'portfolio'}>
                 <div>
-                    <h1>Portfolio</h1>
+                    <span style={{ fontSize: 35, fontWeight: 100 }}>PORTFOLIO</span>
                     <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent:'center'}}>
                         {_map(films, (film, index) => <Card film={film} key={index}/>)}
                     </div>

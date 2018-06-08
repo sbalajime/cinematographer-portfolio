@@ -13,8 +13,8 @@ class App extends Component {
 		return (
 			<div>
 				<div style={{ marginTop:25, display:'flex', flexDirection:'column', justifyContent:'center', textAlign: 'center' }}>
-					<span style={{display:'inline-block', fontSize: 40, fontWeight: 800 }}>Yuvan Selva</span>
-					<span style={{ display: 'inline-block', fontSize: 30, fontWeight: 400 }}>Cinematographer | DI Colorist | Editor</span>
+					<span style={{display:'inline-block', fontSize: 40, fontWeight: 400 }}>YUVAN SELVA</span>
+					<span style={{ display: 'inline-block', fontSize: 25, fontWeight: 100 }}>CINEMATOGRAPHER | DI COLORIST | EDITOR</span>
 				</div>
 				<Menu />
 				<div style={{ padding: 50}}>

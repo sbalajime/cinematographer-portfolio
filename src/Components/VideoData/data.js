@@ -7,69 +7,69 @@ const shortFilms = [{
 {
     id:2,
     videoId: '7qrJanaA-5Q',
-    title: 'Valai',
+    title: 'VALAI',
     thumbnail:'0'
 },
 {
     id:3,
     videoId: 'qcYAlntDJt8',
-    title: 'Badhil Nee',
+    title: 'BADHIL NEE',
     thumbnail:'0'
 },
 {
     id:4,
     videoId: 'vw-nFqfVYsA',
-    title:'Aduthu',
+    title:'ADUTHU',
     thumbnail:'0'
     
 },
 {
     id:5,
     videoId: 'iVyNINCyrQs',
-    title:'7 Shots',
+    title:'7 SHOTS',
     thumbnail:'0'
 },
 {
     id:6,
     videoId: 'h6tvOXGrlFM',
-    title:'Dub Theri Step',
+    title:'DUB THERI STEP',
     thumbnail:'0'    
 },
 {
     id:7,
     videoId: 'WAD2wYLl1vQ',
-    title:'The Subway',
+    title:'THE SUBWAY',
     thumbnail:'0'    
 },
 {
     id:8,
     videoId: 'BZVXAthmBBc',
-    title:'Adiye Azhage',
+    title:'ADIYE AZHAGE',
     thumbnail:'0'    
 },
 {
     id:9,
     videoId: 'zWf2P0CJRNE',
-    title:'Conscience',
+    title:'CONSCIENCE',
     thumbnail:'0'
     
 },
 {
     id:10,
     videoId: 'e2zlA4JHa_8',
-    title: 'Ailesa',
+    title: 'AILESA',
     thumbnail:'0'    
 },
 {
     id:10,
     videoId: '_GZa6HJI37Y',
-    title: 'Adi Penne',
+    title: 'ADI PENNE',
     thumbnail:'0'    
 },
 {
     id:11,
     videoId: 'YaoAFvYOMSY',
-    title: 'Unakena Naan',
+    title: 'UNAKENA NAAN',
     thumbnail:'0'    
 }]
 
