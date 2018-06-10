@@ -22,7 +22,9 @@ class Card extends Component {
                             fontSize: 25,
                             fontWeight: 500,
                             padding: 15,
-                            marginTop: 20
+                            position: 'relative',
+                            top: '50%',
+                            transform: 'translateY(-50%)',
                             }}
                         >
                             <span style={{ opacity: '1 !important'}}>{film.title}</span>
