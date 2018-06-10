@@ -37,3 +37,20 @@ a, a:link, a:visited, a:hover, a:active{
   color: white;
   outline: none;
 }
+
+.mainContainer{
+  padding-top: 25px;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 130vh;
+}
+#myVideo {
+  position: absolute;
+  top:0;
+  right:0;
+  min-width: 100%;
+  min-height: 80vh;
+  z-index: -1;
+}

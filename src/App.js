@@ -12,11 +12,14 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<div style={{ marginTop:25, display:'flex', flexDirection:'column', justifyContent:'center', textAlign: 'center' }}>
+				<div className="mainContainer">
+				<video autoPlay muted loop id="myVideo">
+					<source src="https://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4" />
+				</video>
 					<span style={{display:'inline-block', fontSize: 40, fontWeight: 400 }}>YUVAN SELVA</span>
 					<span style={{ display: 'inline-block', fontSize: 25, fontWeight: 100 }}>CINEMATOGRAPHER | DI COLORIST | EDITOR</span>
+					<Menu />
 				</div>
-				<Menu />
 				<div style={{ padding: 50}}>
 					<Portfolio />
 				</div>
