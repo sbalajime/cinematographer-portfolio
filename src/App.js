@@ -24,6 +24,9 @@ class App extends Component {
 				</div>
 				<div style={{ padding: 50 }}> 
 					<AboutMe />
+				</div>
+				<div style={{ textAlign: 'center', padding: 5 }}>
+					<span><a href="https://sbalaji.me" target="_blank"><span style={{ color: '#aaa'}}>Made by</span> Balaji S</a></span>
 				</div>				
 			</div>
 		);
