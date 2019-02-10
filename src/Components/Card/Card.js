@@ -5,8 +5,7 @@ class Card extends Component {
     render(){
         const { film } = this.props; 
         return(
-            <div>
-            <div id="card" style={{ margin: 20 }}>
+            <div id="card" style={{ alignItems:'center', alignSelf:'center', marginRight: 50 }}>
                 <a href={`https://www.youtube.com/watch?v=${film.videoId}`} target="_blank">
                     <img 
                         src={`https://img.youtube.com/vi/${film.videoId}/${film.thumbnail}.jpg`} 
@@ -31,7 +30,6 @@ class Card extends Component {
                         </div>
                     </div>
                 </a>
-            </div>
             </div>
         )
     }

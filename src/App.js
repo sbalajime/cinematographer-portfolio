@@ -4,6 +4,14 @@ import Menu from '../src/Components/Menu/Menu';
 import AboutMe from '../src/Components/AboutMe/AboutMe';
 import Portfolio from '../src/Components/Portfolio/Portfolio';
 import { configureAnchors } from 'react-scrollable-anchor';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faIgloo, faChevronRight, faChevronLeft} from '@fortawesome/free-solid-svg-icons'
+
+library.add(faIgloo)
+library.add(faChevronRight)
+library.add(faChevronLeft)
+
 
 configureAnchors({offset: 0, scrollDuration: 700})
 
