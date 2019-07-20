@@ -6,7 +6,8 @@ import Portfolio from '../src/Components/Portfolio/Portfolio';
 import { configureAnchors } from 'react-scrollable-anchor';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIgloo, faChevronRight, faChevronLeft} from '@fortawesome/free-solid-svg-icons'
+import { faIgloo, faChevronRight, faChevronLeft} from '@fortawesome/free-solid-svg-icons';
+import newData from './Components/newData';
 
 library.add(faIgloo)
 library.add(faChevronRight)
@@ -20,15 +21,12 @@ class App extends Component {
 		return (
 			<div>
 				<div className="mainContainer">
-				<video autoPlay muted loop id="myVideo">
-					<source src="https://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4" />
-				</video>
 					<span style={{display:'inline-block', fontSize: 40, fontWeight: 400 }}>YUVAN SELVA</span>
 					<span style={{ display: 'inline-block', fontSize: 25, fontWeight: 100 }}>CINEMATOGRAPHER | DI COLORIST | EDITOR</span>
 					<Menu />
 				</div>
 				<div style={{ padding: 50}}>
-					<Portfolio />
+				{Object.keys(newData).map(data =>  <Portfolio data={newData[data]} title={data}/>)}
 				</div>
 				<div style={{ padding: 50 }}> 
 					<AboutMe />
