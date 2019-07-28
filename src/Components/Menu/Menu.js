@@ -4,8 +4,8 @@ class Menu extends Component {
     render(){
         return(
             <div style={{ display: 'flex', justifyContent:'center', marginTop: 20}}>
-                <a href="#portfolio"><span style={{ fontSize: 35, fontWeight: 100 }}>PORTFOLIO</span></a>
-                <a href="#aboutMe"><span style={{ fontSize: 35, fontWeight: 100, marginLeft: 20 }}>ABOUT ME</span></a>
+                <a href="#portfolio"><span style={{ fontSize: 40, fontWeight: 500 }}>Portfolio</span></a>
+                <a href="#achievements"><span style={{ fontSize: 40, fontWeight: 500, marginLeft: 20 }}>Achievements</span></a>
             </div>
         )
     }
