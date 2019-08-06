@@ -3,7 +3,8 @@ import Card from '../Card/Card';
 // import films from '../VideoData/data';
 import _map from 'lodash/map';
 import ScrollableAnchor from 'react-scrollable-anchor'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Description from '../Description/Description.js';
 class Portfolio extends Component {
     constructor(props){
         super(props);
@@ -35,7 +36,7 @@ class Portfolio extends Component {
     }
 
     render(){
-        const {data, title, selectFilm} = this.props;;
+        const {data, title, selectFilm} = this.props;
         console.log('data',data)
         return(
             <ScrollableAnchor id={'portfolio'}>
@@ -50,7 +51,7 @@ class Portfolio extends Component {
                     <div onClick={() => this.handleScrollRight()}> <FontAwesomeIcon icon="chevron-right" style={{ fontSize: 70, marginLeft:30 }}/> </div>
                     </div>
                 </div>
-                <div>{JSON.stringify(this.state.selectedFilm)}</div>
+                    <Description selectedFilm={this.state.selectedFilm} />
                 </div>
             </ScrollableAnchor>
         )
