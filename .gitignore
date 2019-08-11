@@ -22,3 +22,5 @@ yarn-error.log*
 
 # ftp
 ftpcreds.js
+
+*.mp4

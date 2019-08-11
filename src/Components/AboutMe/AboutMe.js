@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { SocialIcon } from 'react-social-icons';
-import ScrollableAnchor from 'react-scrollable-anchor'
+import ScrollableAnchor from 'react-scrollable-anchor';
 
 class AboutMe extends Component {
     

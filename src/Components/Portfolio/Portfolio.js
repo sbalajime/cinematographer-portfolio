@@ -13,9 +13,8 @@ class Portfolio extends Component {
 
 	selectFilm = film => {
         const {selectedFilm} = this.state;
-        console.log('condition',film.name !== selectedFilm.title, 'film.title', film.title, 'selectedFilm', selectedFilm.title)
-        if(film.name !== selectedFilm.name) {
-            this.setState({selectedFilm:film})
+        if(film && (film.name !== selectedFilm.name)) {
+            this.setState({selectedFilm:{}},() => this.setState({selectedFilm:film}))
         } else this.setState({selectedFilm: {}})
     } 
 
@@ -37,7 +36,8 @@ class Portfolio extends Component {
 
     render(){
         const {data, title, selectFilm} = this.props;
-        console.log('data',data)
+        const {selectedFilm} = this.state;
+        console.log('data',data, 'selecedFIlm', selectedFilm);
         return(
             <ScrollableAnchor id={'portfolio'}>
                 <div style={{flexDirection:'column'}}>
@@ -51,7 +51,7 @@ class Portfolio extends Component {
                     <div onClick={() => this.handleScrollRight()}> <FontAwesomeIcon icon="chevron-right" style={{ fontSize: 70, marginLeft:30 }}/> </div>
                     </div>
                 </div>
-                    <Description selectedFilm={this.state.selectedFilm} />
+                    <Description selectedFilm={this.state.selectedFilm} close={this.selectFilm}/>
                 </div>
             </ScrollableAnchor>
         )
