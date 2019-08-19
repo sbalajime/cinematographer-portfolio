@@ -99,7 +99,7 @@ const filmData = {
         videoId:'h6tvOXGrlFM',
         thumbnail:'0',
         trailer:'',
-        sampleVideo:'PsyX-DubTheriStep-1',
+        sampleVideo:'PsyX-DubTheriStep-1.mp4',
         year:'2016',type:'DANCE COVER',
         genre:'DANCE',
         duration:'1:58',

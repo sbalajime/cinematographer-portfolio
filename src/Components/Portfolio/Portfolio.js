@@ -5,6 +5,8 @@ import _map from 'lodash/map';
 import ScrollableAnchor from 'react-scrollable-anchor'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Description from '../Description/Description.js';
+import {IoIosArrowBack, IoIosArrowForward} from 'react-icons/io';
+
 class Portfolio extends Component {
     constructor(props){
         super(props);
@@ -35,23 +37,22 @@ class Portfolio extends Component {
     }
 
     render(){
-        const {data, title, selectFilm} = this.props;
+        const {data, title, selectFilm, modalData} = this.props;
         const {selectedFilm} = this.state;
-        console.log('data',data, 'selecedFIlm', selectedFilm);
         return(
-            <ScrollableAnchor id={'portfolio'}>
-                <div style={{flexDirection:'column'}}>
+            <ScrollableAnchor id={'portfolio'} key={title}>
+                <div style={{flexDirection:'column'}} key={title}>
                 <div>
                     <span style={{ fontSize: 35, fontWeight: 100, textAlign:'center', width:'100%', justifyContent:'center' }}>{title}</span>
                     <div style={{display:'flex', flexDirection:'row', alignItems:'center'}}> 
-                    <div onClick={() => this.handleScrollLeft()}> <FontAwesomeIcon icon="chevron-left" style={{ fontSize: 70, marginRight:30 }}/> </div>
+                    <div onClick={() => this.handleScrollLeft()}> <IoIosArrowBack style={{ height:70, width:70, marginRight:30 }}/> </div>
                     <div ref={el => this.scrollContainer = el}style={{ display: 'flex', flexWrap: 'nowrap', justifyContent:'center', overflowX:'hidden', alignItems:'center', overflowY:'hidden'}}>
                         {_map(data, (film, index) => <Card film={film} key={index} selectFilm={this.selectFilm}/>)}
                     </div>
-                    <div onClick={() => this.handleScrollRight()}> <FontAwesomeIcon icon="chevron-right" style={{ fontSize: 70, marginLeft:30 }}/> </div>
+                    <div onClick={() => this.handleScrollRight()}> <IoIosArrowForward style={{ height:70, width:70, marginRight:30 }}/> </div>
                     </div>
                 </div>
-                    <Description selectedFilm={this.state.selectedFilm} close={this.selectFilm}/>
+                   <Description selectedFilm={selectedFilm} close={this.selectFilm}/>
                 </div>
             </ScrollableAnchor>
         )

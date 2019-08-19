@@ -47,7 +47,7 @@ class Description extends Component {
                                         </div>
                                     </div>
                                     <div style={{ fontSize: 20,margin:'20px 0 20px 0' }}>
-                                        Summary:
+                                        Synopsis:
                                         <div style={{ fontSize: 15, marginLeft: 25 }}>{selectedFilm.summary}</div>
                                     </div>
                                     <div style={{ fontSize: 20,margin:'20px 0 20px 0' }}>
