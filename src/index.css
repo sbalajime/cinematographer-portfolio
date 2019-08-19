@@ -41,6 +41,10 @@ a, a:link, a:visited, a:hover, a:active{
   outline: none;
 }
 
+video {
+  width: 100%;
+}
+
 #videoDiv {width: 100%; height: 100%; position: relative;overflow:hidden;}
 #videoBlock {width: 100%; height: 100%;  display: flex;  justify-content: center; align-items: center;}
 #videoMessage {width: 100%; height:100%; position: absolute; top: 0; left: 0;  background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));padding: 30}
