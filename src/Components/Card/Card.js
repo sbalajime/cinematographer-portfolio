@@ -9,8 +9,8 @@ class Card extends Component {
                 {/* <a href={`https://www.youtube.com/watch?v=${film.videoId}`} target="_blank"> */}
                     <img 
                         src={`https://img.youtube.com/vi/${film.videoId}/${film.thumbnail}.jpg`} 
-                        height="200"
-                        width="250"
+                        height="180vh"
+                        width="230vw"
                         id="cardImage"
                     />
                     <div id="content">
@@ -19,7 +19,7 @@ class Card extends Component {
                             border:'2px solid white',
                             fontFamily: '"Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif',
                             display: 'inline-block',
-                            fontSize: 25,
+                            fontSize: '2vw',
                             fontWeight: 500,
                             padding: 15,
                             position: 'relative',

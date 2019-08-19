@@ -19,7 +19,23 @@ configureAnchors({offset: 0, scrollDuration: 700})
 
 class App extends Component {
 
+	constructor(props){
+		super(props);
+		this.state={
+			selectedFilm: {}
+		}
+	}
+
+	selectFilm = film => {
+        const {selectedFilm} = this.state;
+        if(film && (film.name !== selectedFilm.name)) {
+            this.setState({selectedFilm:{}},() => this.setState({selectedFilm:film}))
+        } else this.setState({selectedFilm: {}})
+    } 
+
 	render() {
+		const {selectedFilm} = this.state;
+		console.log("selectedFilm", selectedFilm);
 		return (
 			<div>
 				<div className="mainContainer">
@@ -28,16 +44,16 @@ class App extends Component {
 				</div>
 				<ScrollableAnchor id={'portfolio'}>
 				<div style={{ padding: 50}}>
-					<center style={{fontSize:40}}>Portfolio</center>
-					{Object.keys(newData).map(data =>  <Portfolio data={newData[data]} title={data} />)}
+					<center style={{fontSize:'3vw'}}>Portfolio</center>
+					{Object.keys(newData).map(data =>  <Portfolio data={newData[data]} title={data} selectedFilm={selectedFilm} selectFilm={this.selectFilm}/>)}
 				</div>				
 				</ScrollableAnchor>	
 				<ScrollableAnchor id={'achievements'}>
 					<div style={{height:'80vh', padding:50}}>
-						<center style={{fontSize:35, marginBottom:50}}>Awards & Recognition</center>
-						<div style={{fontSize:25, marginBottom:25}}>i) Got award for best cinematographer</div>
-						<div style={{fontSize:25, marginBottom:25}}>ii) Best shortfilm</div>
-						<div style={{fontSize:25, marginBottom:25}}>ii) Best Colorist</div>
+						<center style={{fontSize:'3vw', marginBottom:50}}>Awards & Recognition</center>
+						<div style={{fontSize:'2.5vw', marginBottom:25}}>i) Got award for best cinematographer</div>
+						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best shortfilm</div>
+						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best Colorist</div>
 					</div>
 				</ScrollableAnchor>							
 				<div style={{ textAlign: 'center', padding: 5, paddingBottom: 40, zIndex: 99999999 }}>
