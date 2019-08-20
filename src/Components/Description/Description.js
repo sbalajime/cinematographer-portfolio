@@ -26,20 +26,22 @@ class Description extends Component {
                                         <div style={{fontSize: '2vw', marginRight: 50}}>{selectedFilm.type}</div>
                                         <div style={{ marginRight: 50, fontSize:'1.3vw'}}>
                                             Duration: {selectedFilm.duration}
-                                        </div>    
-                                        <button style={{
-                                            border:'0px', 
-                                            borderRadius:'10px', 
-                                            backgroundColor:'black', 
-                                            color:'white', 
-                                            height:'5vh', 
-                                            fontSize:'1.3vw',
-                                            width: '8vw', 
-                                            display:'flex', 
-                                            flexDirection:'row', 
-                                            justifyContent:'center', 
-                                            alignItems:'center', cursor:'pointer'}}
-                                            onClick={()=>window.open('https://www.google.com')}><IoIosFilm style={{height:'1.5vw', width:'1.5vw', color:'red', marginRight:'1vw'}} />Trailer</button>                          
+                                        </div>
+                                        {selectedFilm.trailer ? 
+                                            <button style={{
+                                                border:'0px', 
+                                                borderRadius:'10px', 
+                                                backgroundColor:'black', 
+                                                color:'white', 
+                                                height:'5vh', 
+                                                fontSize:'1.3vw',
+                                                width: '8vw', 
+                                                display:'flex', 
+                                                flexDirection:'row', 
+                                                justifyContent:'center', 
+                                                alignItems:'center', cursor:'pointer'}}
+                                                onClick={()=>window.open(`https://www.youtube.com/watch?v=${selectedFilm.trailer}`)}><IoIosFilm style={{height:'1.5vw', width:'1.5vw', color:'red', marginRight:'1vw'}} />Trailer</button> : null}    
+                                                                  
                                         
                                     </div>
                                     <div style={{ fontSize: '2vw',margin:'20px 0 20px 0' }}>
