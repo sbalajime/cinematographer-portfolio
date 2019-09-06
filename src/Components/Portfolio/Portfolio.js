@@ -37,7 +37,7 @@ class Portfolio extends Component {
                     <span style={{ fontSize: '2.7vw', fontWeight: 100, textAlign:'center', width:'100%', justifyContent:'center' }}>{title}</span>
                     <div style={{display:'flex', flexDirection:'row', alignItems:'center'}}> 
                     <div onClick={() => this.handleScrollLeft()}> <IoIosArrowBack style={{ height:70, width:70, marginRight:30 }}/> </div>
-                    <div ref={el => this.scrollContainer = el}style={{ display: 'flex', flexWrap: 'nowrap', justifyContent:'center', overflowX:'hidden', alignItems:'center', overflowY:'hidden'}}>
+                    <div ref={el => this.scrollContainer = el}style={{ display: 'flex', flexWrap: 'nowrap', justifyContent:'center', alignItems:'center', overflowX:'hidden', overflowY:'hidden'}}>
                         {_map(data, (film, index) => <Card film={film} key={index} selectFilm={selectFilm}/>)}
                     </div>
                     <div onClick={() => this.handleScrollRight()}> <IoIosArrowForward style={{ height:70, width:70, marginRight:30 }}/> </div>

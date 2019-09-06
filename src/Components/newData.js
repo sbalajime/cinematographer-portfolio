@@ -145,7 +145,7 @@ const filmData = {
     2017:[{
         name:'THE SUBWAY',
         videoId:'WAD2wYLl1vQ',
-        thumbnail:'0',
+        thumbnail:'1',
         trailer:'puhXKMqiCFI',
         sampleVideo:'TheSubway-1.mp4',
         year:'2017',type:'SHORT FILM',
