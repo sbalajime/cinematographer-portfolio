@@ -21,8 +21,8 @@ class Card extends Component {
                             border:'2px solid white',
                             fontFamily: '"Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif',
                             display: 'inline-block',
-                            fontSize: '1vw',
-                            fontWeight: 500,
+                            fontSize: film.name.length > 10 ? '1.5vh' : '2vh',
+                            fontWeight: 'bold',
                             padding: 15,width:'60%',marginLeft:'13%',textAlign:'center',
                             transform: 'translateY(-50%)',
                             }}
