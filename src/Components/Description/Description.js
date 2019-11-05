@@ -105,8 +105,8 @@ class Description extends Component {
 
 const CrewDetails = props => {
     const {crew} = props;
-    return(Object.keys(crew).map(key => 
-            <div style={{marginLeft:30}}>
+    return(Object.keys(crew).map((key, index) => 
+            <div style={{marginLeft:30}} key={index}>
                 <span style={{fontSize:'1.5vw', fontWeight:'bold'}}>{key}:</span>
                 <span style={{fontSize:'1.3vw', marginLeft: 10}}>{typeof(crew[key]) === "object" ? crew[key].join(', '):crew[key]}</span>
             </div>

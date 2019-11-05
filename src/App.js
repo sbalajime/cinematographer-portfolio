@@ -45,7 +45,7 @@ class App extends Component {
 				<ScrollableAnchor id={'portfolio'}>
 				<div style={{ padding: 50}}>
 					<center style={{fontSize:'3vw'}}>Portfolio</center>
-					{Object.keys(newData).map(data =>  <Portfolio data={newData[data]} title={data} selectedFilm={selectedFilm} selectFilm={this.selectFilm}/>)}
+					{Object.keys(newData).map((data, index) =>  <Portfolio data={newData[data]} key={index} title={data} selectedFilm={selectedFilm} selectFilm={this.selectFilm}/>)}
 				</div>				
 				</ScrollableAnchor>	
 				<ScrollableAnchor id={'achievements'}>
