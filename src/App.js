@@ -52,7 +52,7 @@ class App extends Component {
 				</div>				
 				</ScrollableAnchor>	
 				<ScrollableAnchor id={'gallery'}>
-					<div style={{height:'80vh', padding:50}}>
+					<div style={{height:'80vh', padding:50, overflowY:'hidden'}}>
 						{/* <center style={{fontSize:'3vw', marginBottom:50}}>Awards & Recognition</center>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>i) Got award for best cinematographer</div>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best shortfilm</div>
