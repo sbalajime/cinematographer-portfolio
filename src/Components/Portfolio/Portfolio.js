@@ -26,14 +26,14 @@ class Portfolio extends Component {
         // this.scrollContainer.scrollLeft -= 100;
         this.scrollContainer.scrollBy({ 
  // could be negative value
-            left: -400, 
+            left: -500, 
             behavior: 'smooth' 
           })
     }
     handleScrollRight = () => {
         // this.scrollContainer.scrollLeft += 100;
         this.scrollContainer.scrollBy({ 
-            left: 400, // could be negative value 
+            left: 500, // could be negative value 
             behavior: 'smooth' 
           })
     }

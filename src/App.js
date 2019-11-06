@@ -9,6 +9,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faIgloo, faChevronRight, faChevronLeft} from '@fortawesome/free-solid-svg-icons';
 import newData from './Components/newData';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import Gallery from "react-photo-gallery";
+
+import photos from './Components/photos';
 
 library.add(faIgloo)
 library.add(faChevronRight)
@@ -48,12 +51,14 @@ class App extends Component {
 					{Object.keys(newData).map((data, index) =>  <Portfolio data={newData[data]} key={index} title={data} selectedFilm={selectedFilm} selectFilm={this.selectFilm}/>)}
 				</div>				
 				</ScrollableAnchor>	
-				<ScrollableAnchor id={'achievements'}>
+				<ScrollableAnchor id={'gallery'}>
 					<div style={{height:'80vh', padding:50}}>
-						<center style={{fontSize:'3vw', marginBottom:50}}>Awards & Recognition</center>
+						{/* <center style={{fontSize:'3vw', marginBottom:50}}>Awards & Recognition</center>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>i) Got award for best cinematographer</div>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best shortfilm</div>
-						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best Colorist</div>
+						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best Colorist</div> */}
+						<center style={{fontSize:'3vw', marginBottom:50}}>Gallery</center>
+						<Gallery photos={photos} direction={"row"}/>
 					</div>
 				</ScrollableAnchor>							
 				<div style={{ textAlign: 'center', padding: 5, paddingBottom: 40, zIndex: 99999999 }}>
