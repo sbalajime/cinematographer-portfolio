@@ -49,11 +49,9 @@ class Portfolio extends Component {
                 <div>
                     <span style={{ fontSize: '2.7vw', fontWeight: 100, textAlign:'center', width:'100%', justifyContent:'center' }}>{title}</span>
                     <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center'}}> 
-                    {isCarousel ? <div onClick={() => this.handleScrollLeft()}> <IoIosArrowBack style={{ height:70, width:70, marginRight:30 }}/> </div> : null}
-                    <div ref={el => this.scrollContainer = el}style={{ display: 'flex', flexWrap: 'nowrap', justifyContent:'center', alignItems:'center', overflowX:'hidden', overflowY:'hidden'}}>
+                    <div ref={el => this.scrollContainer = el}style={{ display: 'flex', flexWrap: 'wrap', justifyContent:'center', alignItems:'center', overflowX:'hidden', overflowY:'hidden'}}>
                         {_map(data, (film, index) => <Card film={film} key={index} selectFilm={selectFilm}/>)}
                     </div>
-                    {isCarousel ? <div onClick={() => this.handleScrollRight()}> <IoIosArrowForward style={{ height:70, width:70, marginRight:30 }}/> </div> : null}
                     </div>
                 </div>
                    {selectedFilm.year === title ? <Description selectedFilm={selectedFilm} close={selectFilm}/> : null}

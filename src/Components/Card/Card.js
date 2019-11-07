@@ -10,7 +10,7 @@ class Card extends Component {
                     <img 
                         src={`https://img.youtube.com/vi/${film.videoId}/${film.thumbnail}.jpg`} 
                         height="300px"
-                        width="480px"
+                        width="400px"
                         id="cardImage"
                     />
                     <div id="content">
