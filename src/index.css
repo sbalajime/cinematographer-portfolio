@@ -57,6 +57,7 @@ a, a:link, a:visited, a:hover, a:active{
 }
 
 video {
+  object-fit: fill;
   width: 100%;
 }
 

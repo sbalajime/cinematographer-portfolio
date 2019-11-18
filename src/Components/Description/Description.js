@@ -10,7 +10,8 @@ class Description extends Component {
         const { selectedFilm, close } = this.props;
         return (
             selectedFilm.name ?
-                <div style={{ height: '80vh', backgroundColor: '#002' }} id="videoDiv">
+            <div id={selectedFilm.name}>
+                <div style={{ height: '100vh', backgroundColor: '#002' }} id="videoDiv">
                     <div id="videoBlock">
                         <video loop autoPlay >
                             <source src={selectedFilm.sampleVideo} type="video/mp4" />
@@ -98,7 +99,8 @@ class Description extends Component {
                             </div>
                         </div>
                     </div>
-                </div> : <div />
+                </div> 
+                </div>: <div />
         )
     }
 }

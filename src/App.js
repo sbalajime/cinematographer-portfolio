@@ -10,7 +10,9 @@ import { faIgloo, faChevronRight, faChevronLeft} from '@fortawesome/free-solid-s
 import newData from './Components/newData';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Gallery from "react-photo-gallery";
-
+import Modal from 'react-modal';
+import {IoIosCloseCircle} from 'react-icons/io';
+import ReactRevealText from 'react-reveal-text';
 import photos from './Components/photos';
 
 library.add(faIgloo)
@@ -25,20 +27,22 @@ class App extends Component {
 	constructor(props){
 		super(props);
 		this.state={
-			selectedFilm: {}
+			selectedFilm: {},
+			photo:''
 		}
 	}
 
 	selectFilm = film => {
         const {selectedFilm} = this.state;
         if(film && (film.name !== selectedFilm.name)) {
-            this.setState({selectedFilm:{}},() => this.setState({selectedFilm:film}))
+			this.setState({selectedFilm:{}},() => this.setState({selectedFilm:film},() =>{window.location.href = `${window.location.origin}/#${film.name}`}))
+			// setTimeout(() => {window.location.href = `${window.location.origin}/#${film.name}`})
         } else this.setState({selectedFilm: {}})
-    } 
+	} 
 
 	render() {
 		const {selectedFilm} = this.state;
-		console.log("selectedFilm", selectedFilm);
+		console.log("selectedFilm", selectedFilm, 'selectedPhoto',this.state.selectedPhoto);
 		return (
 			<div>
 				<div className="mainContainer">
@@ -58,9 +62,16 @@ class App extends Component {
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best shortfilm</div>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best Colorist</div> */}
 						<center style={{fontSize:'3vw', marginBottom:50}}>Gallery</center>
-						<Gallery photos={photos} direction={"row"}/>
+						<Gallery photos={photos} direction={"row"} onClick={(e,{photo}) => {console.log('photot', photo);this.setState({selectedPhoto:photo.src})}}/>
+						
 					</div>
-				</ScrollableAnchor>							
+				</ScrollableAnchor>	
+				<Modal isOpen={this.state.selectedPhoto} style={{backgroundColor:'black', width:'500px'}}>
+					<div>
+					<IoIosCloseCircle style={{height:'2vw', width:'2vw', color:'red', float:'right'}} onClick={() => this.setState({selectedPhoto:''})}/>
+				<img src={this.state.selectedPhoto}  />	
+					</div>				
+				</Modal>									
 				<div style={{ textAlign: 'center', padding: 5, paddingBottom: 40, zIndex: 99999999 }}>
 					<span><a href="https://sbalaji.me" target="_blank"><span style={{ color: '#aaa'}}>Made by</span> Balaji S</a></span>
 				</div>				
