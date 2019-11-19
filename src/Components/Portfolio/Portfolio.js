@@ -46,8 +46,8 @@ class Portfolio extends Component {
             <div key={title}>
             <ScrollableAnchor id={'portfolio'} key={title}>
                 <div style={{flexDirection:'column', marginTop:'10vh'}} key={title}>
-                <div>
-                    <span style={{ fontSize: '2.7vw', fontWeight: 100, textAlign:'center', width:'100%', justifyContent:'center' }}>{title}</span>
+                <div style={{borderBottom:'2px solid white', borderTop:'1px solid white', borderRadius:'50px'}}>
+                    <center style={{ fontSize: '2.7vw', fontWeight: 100, textAlign:'center', width:'100%', justifyContent:'center', marginBottom:'5vh', marginTop:'5vh' }}>{title}</center>
                     <div style={{display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center'}}> 
                     <div ref={el => this.scrollContainer = el}style={{ display: 'flex', flexWrap: 'wrap', justifyContent:'center', alignItems:'center', overflowX:'hidden', overflowY:'hidden'}}>
                         {_map(data, (film, index) => <Card film={film} key={index} selectFilm={selectFilm}/>)}
