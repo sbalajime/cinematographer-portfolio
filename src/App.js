@@ -66,12 +66,14 @@ class App extends Component {
 						
 					</div>
 				</ScrollableAnchor>	
-				<Modal isOpen={this.state.selectedPhoto} style={{backgroundColor:'black', width:'500px'}}>
-					<div>
-					<IoIosCloseCircle style={{height:'2vw', width:'2vw', color:'red', float:'right'}} onClick={() => this.setState({selectedPhoto:''})}/>
-				<img src={this.state.selectedPhoto}  />	
-					</div>				
-				</Modal>									
+				{this.state.selectedPhoto ? <div style={{width:'100vw', height:'100vh',position:'fixed', top:0, backgroundColor:'rgba(0,0,0,0.9)', display:'flex', flexDirection:'row', justifyContent:'space-around', alignItems:'center'}}>
+				<div><span style={{fontSize:'4vw', color:'red', position:'fixed',top:'2%', right:'2%', zIndex:6, cursor:'pointer'}} onClick={() => this.setState({selectedPhoto:''})}>X</span><img id="gallery-image" src={this.state.selectedPhoto} /></div></div>	: null}
+				 {/* <Modal isOpen={this.state.selectedPhoto} style={{backgroundColor:'black', width:'auto'}}>
+				 	<div>
+				 	<IoIosCloseCircle style={{height:'2vw', width:'2vw', color:'red', float:'right'}} onClick={() => this.setState({selectedPhoto:''})}/>
+				 <img src={this.state.selectedPhoto}  />	
+				 	</div>				
+				 </Modal>									 */}
 				<div style={{ textAlign: 'center', padding: 5, paddingBottom: 40, zIndex: 99999999 }}>
 					<span><a href="https://sbalaji.me" target="_blank"><span style={{ color: '#aaa'}}>Made by</span> Balaji S</a></span>
 				</div>				
