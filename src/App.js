@@ -6,12 +6,12 @@ import Portfolio from '../src/Components/Portfolio/Portfolio';
 import { configureAnchors } from 'react-scrollable-anchor';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIgloo, faChevronRight, faChevronLeft} from '@fortawesome/free-solid-svg-icons';
+import { faIgloo, faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import newData from './Components/newData';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Gallery from "react-photo-gallery";
 import Modal from 'react-modal';
-import {IoIosCloseCircle} from 'react-icons/io';
+import { IoIosCloseCircle } from 'react-icons/io';
 import ReactRevealText from 'react-reveal-text';
 import photos from './Components/photos';
 
@@ -20,29 +20,29 @@ library.add(faChevronRight)
 library.add(faChevronLeft)
 
 
-configureAnchors({offset: 0, scrollDuration: 700})
+configureAnchors({ offset: 0, scrollDuration: 700 })
 
 class App extends Component {
 
-	constructor(props){
+	constructor(props) {
 		super(props);
-		this.state={
+		this.state = {
 			selectedFilm: {},
-			photo:''
+			photo: ''
 		}
 	}
 
 	selectFilm = film => {
-        const {selectedFilm} = this.state;
-        if(film && (film.name !== selectedFilm.name)) {
-			this.setState({selectedFilm:{}},() => this.setState({selectedFilm:film},() =>{window.location.href = `${window.location.origin}/#${film.name}`}))
+		const { selectedFilm } = this.state;
+		if (film && (film.name !== selectedFilm.name)) {
+			this.setState({ selectedFilm: {} }, () => this.setState({ selectedFilm: film }, () => { window.location.href = `${window.location.origin}/#${film.name}` }))
 			// setTimeout(() => {window.location.href = `${window.location.origin}/#${film.name}`})
-        } else this.setState({selectedFilm: {}})
-	} 
+		} else this.setState({ selectedFilm: {} })
+	}
 
 	render() {
-		const {selectedFilm} = this.state;
-		console.log("selectedFilm", selectedFilm, 'selectedPhoto',this.state.selectedPhoto);
+		const { selectedFilm } = this.state;
+		console.log("selectedFilm", selectedFilm, 'selectedPhoto', this.state.selectedPhoto);
 		return (
 			<div>
 				<div className="mainContainer">
@@ -50,33 +50,40 @@ class App extends Component {
 					<AboutMe />
 				</div>
 				<ScrollableAnchor id={'portfolio'}>
-				<div style={{ padding: 50}}>
-					<center style={{fontSize:'3vw'}}>Portfolio</center>
-					{Object.keys(newData).map((data, index) =>  <Portfolio data={newData[data]} key={index} title={data} selectedFilm={selectedFilm} selectFilm={this.selectFilm}/>)}
-				</div>				
-				</ScrollableAnchor>	
+					<div style={{ padding: 50 }}>
+						<center style={{ fontSize: '3vw' }}>Portfolio</center>
+						{Object.keys(newData).map((data, index) => <Portfolio data={newData[data]} key={index} title={data} selectedFilm={selectedFilm} selectFilm={this.selectFilm} />)}
+					</div>
+				</ScrollableAnchor>
 				<ScrollableAnchor id={'gallery'}>
-					<div style={{height:'80vh', padding:50, overflowY:'hidden'}}>
+					<div style={{ height: '80vh', padding: 50, overflowY: 'hidden' }}>
 						{/* <center style={{fontSize:'3vw', marginBottom:50}}>Awards & Recognition</center>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>i) Got award for best cinematographer</div>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best shortfilm</div>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best Colorist</div> */}
-						<center style={{fontSize:'3vw', marginBottom:50}}>Gallery</center>
-						<Gallery photos={photos} direction={"row"} onClick={(e,{photo}) => {console.log('photot', photo);this.setState({selectedPhoto:photo.src})}}/>
-						
+						<center style={{ fontSize: '3vw', marginBottom: 50 }}>Gallery</center>
+						<Gallery photos={photos} direction={"row"} onClick={(e, { photo }) => { console.log('photot', photo); this.setState({ selectedPhoto: photo.src }) }} />
+
 					</div>
-				</ScrollableAnchor>	
-				{this.state.selectedPhoto ? <div style={{width:'100vw', height:'100vh',position:'fixed', top:0, backgroundColor:'rgba(0,0,0,0.9)', display:'flex', flexDirection:'row', justifyContent:'space-around', alignItems:'center'}}>
-				<div><span style={{fontSize:'4vw', color:'red', position:'fixed',top:'2%', right:'2%', zIndex:6, cursor:'pointer'}} onClick={() => this.setState({selectedPhoto:''})}>X</span><img id="gallery-image" src={this.state.selectedPhoto} /></div></div>	: null}
-				 {/* <Modal isOpen={this.state.selectedPhoto} style={{backgroundColor:'black', width:'auto'}}>
+				</ScrollableAnchor>
+				 <div style={{ visibility:this.state.selectedPhoto ? 'visible':'hidden', 
+				 opacity:this.state.selectedPhoto ? 1 : 0,transition:'visibility 0.3s cubic-bezier(0, 0, 1, 1),opacity 0.3s  cubic-bezier(0, 0, 1, 1)', 
+				 width: '100vw', 
+				 height: '100vh', 
+				 position: 'fixed', 
+				 top: 0, 
+				 backgroundColor: 'rgba(0,0,0,0.9)', display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center' }}>
+						<div><span style={{ fontSize: '4vw', color: 'red', position: 'fixed', top: '2%', right: '2%', zIndex: 6, cursor: 'pointer' }} onClick={() => this.setState({ selectedPhoto: '' })}>X</span><img id="gallery-image" src={this.state.selectedPhoto} /></div></div> 
+				
+				{/* <Modal isOpen={this.state.selectedPhoto} style={{backgroundColor:'black', width:'auto'}}>
 				 	<div>
 				 	<IoIosCloseCircle style={{height:'2vw', width:'2vw', color:'red', float:'right'}} onClick={() => this.setState({selectedPhoto:''})}/>
 				 <img src={this.state.selectedPhoto}  />	
 				 	</div>				
 				 </Modal>									 */}
 				<div style={{ textAlign: 'center', padding: 5, paddingBottom: 40, zIndex: 99999999 }}>
-					<span><a href="https://sbalaji.me" target="_blank"><span style={{ color: '#aaa'}}>Made by</span> Balaji S</a></span>
-				</div>				
+					<span><a href="https://sbalaji.me" target="_blank"><span style={{ color: '#aaa' }}>Made by</span> Balaji S</a></span>
+				</div>
 			</div>
 		);
 	}

@@ -5,7 +5,7 @@ class Card extends Component {
     render(){
         const { film, selectFilm } = this.props; 
         return(
-            <div id="card" style={{ alignItems:'center', alignSelf:'center', marginLeft: 50, marginRight:50, position:'relative'}} onClick={() => selectFilm(film)}>
+            <div id="card" style={{ alignItems:'center', alignSelf:'center', marginLeft: 50, marginRight:50, position:'relative', cursor:'pointer'}} onClick={() => selectFilm(film)}>
                 {/* <a href={`https://www.youtube.com/watch?v=${film.videoId}`} target="_blank"> */}
                     <img 
                         src={`https://img.youtube.com/vi/${film.videoId}/${film.thumbnail}.jpg`} 

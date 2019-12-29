@@ -64,7 +64,7 @@ class Description extends Component {
                                     </div>
                                 </div>                            
                                 <div style={{width:'20%', height:'80vh',display:'flex', flexDirection:'column'}}>
-                                    <div style={{display:'flex', flexDirection:'row', justifyContent:'flex-end', width:'80%', marginRight:'10vw', marginTop:'5%'}} >
+                                    <div style={{display:'flex', flexDirection:'row', justifyContent:'flex-end', width:'80%', marginRight:'10vw', marginTop:'5%', cursor:'pointer'}} >
                                         <IoIosCloseCircle style={{height:'2vw', width:'2vw', color:'red'}} onClick={() => close()}/>
                                     </div>
                                    
