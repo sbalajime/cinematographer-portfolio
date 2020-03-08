@@ -62,7 +62,7 @@ class App extends Component {
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best shortfilm</div>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best Colorist</div> */}
 						<center style={{ fontSize: '3vw', marginBottom: 50 }}>Gallery</center>
-						<Gallery photos={photos} direction={"row"} onClick={(e, { photo }) => { console.log('photot', photo); this.setState({ selectedPhoto: photo.src }) }} />
+						<Gallery photos={photos} direction={"row"} onClick={(e, { photo }) => { console.log('photot', e, e.target.getBoundingClientRect()); this.setState({ selectedPhoto: photo.src }) }} />
 
 					</div>
 				</ScrollableAnchor>
@@ -73,7 +73,7 @@ class App extends Component {
 				 position: 'fixed', 
 				 top: 0, 
 				 backgroundColor: 'rgba(0,0,0,0.9)', display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center' }}>
-						<div><span style={{ fontSize: '4vw', color: 'red', position: 'fixed', top: '2%', right: '2%', zIndex: 6, cursor: 'pointer' }} onClick={() => this.setState({ selectedPhoto: '' })}>X</span><img id="gallery-image" src={this.state.selectedPhoto} /></div></div> 
+						<div><span style={{ fontSize: '2vw', color: 'white', fontWeight:'bold',position: 'fixed', top: '2%', right: '2%', zIndex: 6, cursor: 'pointer' }} onClick={() => this.setState({ selectedPhoto: '' })}>X</span><img id="gallery-image" src={this.state.selectedPhoto} /></div></div> 
 				
 				{/* <Modal isOpen={this.state.selectedPhoto} style={{backgroundColor:'black', width:'auto'}}>
 				 	<div>
