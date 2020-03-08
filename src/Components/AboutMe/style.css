@@ -1,7 +1,4 @@
-.aboutContainer {
-    padding: 100px;
-    padding-top:50px;
-}
+
 
 .avatar{ 
     border-radius: 75px; 
@@ -35,9 +32,6 @@
 }
 
 @media screen and (max-width:900px){
-    .aboutContainer{
-        padding:80px;
-    }
     .avatar{
         width:100px;
         height:100px;
@@ -49,9 +43,6 @@
 }
 
 @media screen and (max-width:600px){
-    .aboutContainer{
-        padding:15px;
-    }
     .avatar{
         width:70px;
         height:70px;

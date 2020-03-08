@@ -44,19 +44,19 @@ class App extends Component {
 		const { selectedFilm } = this.state;
 		console.log("selectedFilm", selectedFilm, 'selectedPhoto', this.state.selectedPhoto);
 		return (
-			<div>
+			<div className="appWrapper">
 				<div className="mainContainer">
 					<Menu />
 					<AboutMe />
 				</div>
 				<ScrollableAnchor id={'portfolio'}>
-					<div style={{ padding: 50 }}>
-						<center style={{ fontSize: '3vw' }}>Portfolio</center>
+					<div className="portfolioSection">
+						<center className="menuItem">Portfolio</center>
 						{Object.keys(newData).map((data, index) => <Portfolio data={newData[data]} key={index} title={data} selectedFilm={selectedFilm} selectFilm={this.selectFilm} />)}
 					</div>
 				</ScrollableAnchor>
 				<ScrollableAnchor id={'gallery'}>
-					<div style={{ height: '80vh', padding: 50, overflowY: 'hidden' }}>
+					<div style={{ height: '80vh', overflowY: 'hidden' }}>
 						{/* <center style={{fontSize:'3vw', marginBottom:50}}>Awards & Recognition</center>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>i) Got award for best cinematographer</div>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best shortfilm</div>

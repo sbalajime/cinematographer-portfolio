@@ -66,7 +66,6 @@ video {
 #videoBlock {width: 100%; height: 100%;  display: flex;  justify-content: center; align-items: center;}
 #videoMessage {width: 100%; height:100%; position: absolute; top: 0; left: 0;  background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));padding: 30}
 .mainContainer{
-  padding-top: 25px;
   display:flex;
   flex-direction: column;
   width: 100%;
@@ -97,6 +96,13 @@ video {
   display:flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.flexRowAJCenter{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
 }
 
 .flexRowJEnd{

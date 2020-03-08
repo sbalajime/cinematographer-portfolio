@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.appWrapper{
+  padding:100px;
+  padding-top:20px;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -30,4 +35,8 @@
    .mainContainer{
      height:auto;
    }
+   .appWrapper{
+    padding:30px;
+    padding-top:10px;
+  }
  }
