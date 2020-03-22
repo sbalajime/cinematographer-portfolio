@@ -105,8 +105,20 @@ video {
   align-items:center;
 }
 
+.flexRowACenter{
+  display:flex;
+  flex-direction: row;
+  align-items:center;
+}
+
 .flexRowJEnd{
   display:flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+.flexRowWrap{
+  display:flex;
+  flex-direction:row; 
+  flex-wrap:wrap;
 }

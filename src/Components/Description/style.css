@@ -1,0 +1,110 @@
+#videoDiv{
+    height: 100vh !important;
+    background-color: #002;
+}
+
+.filmDetailsContainer {
+    width:80%;
+}
+
+.descFirstRow {
+    margin:1% 0px 20px 0px;
+}
+
+.descFilmName{
+    font-size: 25px;
+    margin-right: 50px; 
+    font-weight: bold;
+}
+
+.descFilmType{
+    font-size: 10px;
+    margin-right: 50px;
+}
+
+.descDuration{
+    margin-right: 50px;
+    font-size:15px;
+}
+
+.playButton{
+    border:0px; 
+    border-radius:10px; 
+    background-color:black; 
+    color:white; 
+    height:5vh; 
+    font-size:1.3vw;
+    width: 8vw; 
+    display:flex; 
+    flex-direction:row; 
+    justify-content:center; 
+    align-items:center;
+    cursor:pointer;
+}
+
+.descBody{ 
+    font-size: 15px;
+    margin:20px 0px 20px 0px;
+}
+
+.descBodyText{
+    font-size: 13px; 
+    margin-left: 25px;
+}
+
+.descRightSec{
+    width:20%; 
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+}
+
+.descCloseContainer{
+   display:flex;
+   flex-direction:row;
+   justify-content:flex-end;
+    width:80%; 
+    margin-right:10vw; 
+    margin-top:5%; 
+    cursor:pointer;
+}
+
+.descCloseIcon{
+    height:2vw; 
+    width:2vw;
+    color:red;
+}
+
+.descPlayButton{
+    height:10vh; 
+    width:80%; 
+    display:flex; 
+    flex-direction:row; 
+    align-items:center; 
+    justify-content:center; 
+    font-size: 2vw; 
+    color:white; 
+    background-color:black; 
+    border:0px;
+    border-radius: 10px; 
+    cursor:pointer;
+    margin-top:7%
+}
+
+.descPlayIcon{
+    height:2vw; 
+    width:2vw;
+    color:red; 
+    margin-right:1vw;
+}
+.crewDesignation{
+    font-size:12px;
+    font-weight:bold;
+}
+
+.crewMember{
+    font-size:10px; 
+    margin-left: 10px;
+}
+
+@media screen and (max-width:600px){}

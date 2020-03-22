@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { IoIosCloseCircle,IoIosPlay, IoIosFilm } from "react-icons/io";
+import './style.css';
 
 class Description extends Component {
     constructor(props) {
@@ -11,87 +12,58 @@ class Description extends Component {
         return (
             selectedFilm.name ?
             <div id={selectedFilm.name}>
-                <div style={{ height: '100vh', backgroundColor: '#002' }} id="videoDiv">
+                <div id="videoDiv">
                     <div id="videoBlock">
                         <video loop autoPlay >
-                            <source src={selectedFilm.sampleVideo} type="video/mp4" />
+                            <source src={selectedFilm.sampleVideo} type="video/mp4"/>
                             Your browser does not support the video tag.
                         </video>
                         <div id="videoMessage">
-                            <div style={{display:'flex', flexDirection:'row'}}>
-                                <div style={{width: '80%'}}>
-                                    <div style={{margin:'0px 0 20px 0', display:'flex', flexDirection:'row', marginTop:'1%', alignItems:'center'}}>
-                                        <div style={{ fontSize: '2.5vw', marginRight: 50, fontWeight: 'bold' }}>
+                            <div className="flexRow">
+                                <div className="filmDetailsContainer">
+                                    <div className="descFirstRow flexRowACenter" >
+                                        <div className="descFilmName" >
                                             {selectedFilm.name}
                                         </div>
-                                        <div style={{fontSize: '2vw', marginRight: 50}}>{selectedFilm.type}</div>
-                                        <div style={{ marginRight: 50, fontSize:'1.3vw'}}>
+                                        <div className="descFilmType">{selectedFilm.type}</div>
+                                        <div className="descDuration">
                                             Duration: {selectedFilm.duration}
                                         </div>
                                         {selectedFilm.trailer ? 
-                                            <button style={{
-                                                border:'0px', 
-                                                borderRadius:'10px', 
-                                                backgroundColor:'black', 
-                                                color:'white', 
-                                                height:'5vh', 
-                                                fontSize:'1.3vw',
-                                                width: '8vw', 
-                                                display:'flex', 
-                                                flexDirection:'row', 
-                                                justifyContent:'center', 
-                                                alignItems:'center', cursor:'pointer'}}
-                                                onClick={()=>window.open(`https://www.youtube.com/watch?v=${selectedFilm.trailer}`)}><IoIosFilm style={{height:'1.5vw', width:'1.5vw', color:'red', marginRight:'1vw'}} />Trailer</button> : null}    
+                                            <button className="playButton" 
+                                                onClick={()=>window.open(`https://www.youtube.com/watch?v=${selectedFilm.trailer}`)}>Trailer</button> : null}    
                                                                   
                                         
                                     </div>
-                                    <div style={{ fontSize: '2vw',margin:'20px 0 20px 0' }}>
-                                        Crew: <div style={{display:'flex', flexDirection:'row', flexWrap:'wrap'}}>
+                                    <div className="descBody">
+                                        Crew: <div className="flexRowWrap">
                                         <CrewDetails crew={selectedFilm.crew} />
                                         </div>
                                     </div>
-                                    <div style={{ fontSize: '2vw',margin:'20px 0 20px 0' }}>
+                                    <div className="descBody">
                                         Synopsis:
-                                        <div style={{ fontSize: '1.3vw', marginLeft: 25 }}>{selectedFilm.summary}</div>
+                                        <div className="descBodyText">{selectedFilm.summary}</div>
                                     </div>
-                                    <div style={{ fontSize: '2vw',margin:'20px 0 20px 0' }}>
+                                    <div className="descBody">
                                         Personal Notes:
-                    <div style={{ fontSize: '1.3vw', marginLeft: 25 }}>{selectedFilm.personalNote}</div>
+                    <div className="descBodyText">{selectedFilm.personalNote}</div>
                                     </div>
-                                    <div style={{ fontSize: '2vw', margin:'20px 0 20px 0' }}>
+                                    <div className="descBody">
                                         Trivia:
-                    <div style={{ fontSize: '1.3vw', marginLeft: 25 }}>{selectedFilm.trivia}</div>
+                    <div className="descBodyText">{selectedFilm.trivia}</div>
                                     </div>
                                 </div>                            
-                                <div style={{width:'20%', height:'80vh',display:'flex', flexDirection:'column'}}>
-                                    <div style={{display:'flex', flexDirection:'row', justifyContent:'flex-end', width:'80%', marginRight:'10vw', marginTop:'5%', cursor:'pointer'}} >
-                                        <IoIosCloseCircle style={{height:'2vw', width:'2vw', color:'red'}} onClick={() => close()}/>
+                                <div className="descRightSec">
+                                    <div className="descCloseContainer" >
+                                        <IoIosCloseCircle className="descCloseIcon" onClick={() => close()}/>
                                     </div>
                                    
-                                    <div style={{marginTop:'7%'}}>
+                                    <div>
                                         <button 
-                                            style={{
-                                                height:'10vh', 
-                                                width:'80%', 
-                                                display:'flex', 
-                                                flexDirection:'row', 
-                                                alignItems:'center', 
-                                                justifyContent:'center', 
-                                                fontSize: '2vw', 
-                                                color:'white', 
-                                                backgroundColor:'black', 
-                                                border:'0px', 
-                                                borderRadius: '10px', 
-                                                cursor:'pointer'
-                                            }}
+                                        className="descPlayButton"
                                             onClick={()=>window.open(`https://www.youtube.com/watch?v=${selectedFilm.videoId}`)}>
                                                 <IoIosPlay 
-                                                    style={{
-                                                        height:'2vw', 
-                                                        width:'2vw', 
-                                                        color:'red', 
-                                                        marginRight:'1vw'
-                                                    }}
+                                                    className="descPlayIcon"
                                                 /> Play
                                             </button>
                                         </div>
@@ -109,8 +81,8 @@ const CrewDetails = props => {
     const {crew} = props;
     return(Object.keys(crew).map((key, index) => 
             <div style={{marginLeft:30}} key={index}>
-                <span style={{fontSize:'1.5vw', fontWeight:'bold'}}>{key}:</span>
-                <span style={{fontSize:'1.3vw', marginLeft: 10}}>{typeof(crew[key]) === "object" ? crew[key].join(', '):crew[key]}</span>
+                <span className="crewDesignation">{key}:</span>
+                <span className="crewMember">{typeof(crew[key]) === "object" ? crew[key].join(', '):crew[key]}</span>
             </div>
     ))    
 }
