@@ -34,9 +34,17 @@
  @media screen and (max-width: 600px) {
    .mainContainer{
      height:auto;
+     margin:10px;
+     width:94%;
    }
    .appWrapper{
-    padding:30px;
+    padding:0px;
     padding-top:10px;
+  }
+  video {
+    transform:scale(5);
+  }
+  .card{
+    margin:20px;
   }
  }
