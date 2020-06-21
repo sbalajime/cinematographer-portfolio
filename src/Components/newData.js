@@ -2,7 +2,6 @@ const filmData = {
     2014:[{
         name:'2003',
         videoId:'Asvdcp_bHKQ',
-        trailer:'',
         sampleVideo:'2003-1.mp4',
         thumbnail:'0',
         trailer:'wQySBIVzKdY',
