@@ -81,9 +81,7 @@ class App extends Component {
 				 <img src={this.state.selectedPhoto}  />	
 				 	</div>				
 				 </Modal>									 */}
-				<div style={{ textAlign: 'center', padding: 5, paddingBottom: 40, zIndex: 99999999 }}>
-					<span><a href="https://sbalaji.me" target="_blank"><span style={{ color: '#aaa' }}>Made by</span> Balaji S</a></span>
-				</div>
+				
 			</div>
 		);
 	}
