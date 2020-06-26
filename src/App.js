@@ -5,14 +5,10 @@ import AboutMe from '../src/Components/AboutMe/AboutMe';
 import Portfolio from '../src/Components/Portfolio/Portfolio';
 import { configureAnchors } from 'react-scrollable-anchor';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faIgloo, faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import newData from './Components/newData';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Gallery from "react-photo-gallery";
-import Modal from 'react-modal';
-import { IoIosCloseCircle } from 'react-icons/io';
-import ReactRevealText from 'react-reveal-text';
 import photos from './Components/photos';
 
 library.add(faIgloo)
@@ -66,22 +62,24 @@ class App extends Component {
 
 					</div>
 				</ScrollableAnchor>
-				 <div style={{ visibility:this.state.selectedPhoto ? 'visible':'hidden', 
-				 opacity:this.state.selectedPhoto ? 1 : 0,transition:'visibility 0.3s cubic-bezier(0, 0, 1, 1),opacity 0.3s  cubic-bezier(0, 0, 1, 1)', 
-				 width: '100vw', 
-				 height: '100vh', 
-				 position: 'fixed', 
-				 top: 0, 
-				 backgroundColor: 'rgba(0,0,0,0.9)', display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center' }}>
-						<div><span style={{ fontSize: '2vw', color: 'white', fontWeight:'bold',position: 'fixed', top: '2%', right: '2%', zIndex: 6, cursor: 'pointer' }} onClick={() => this.setState({ selectedPhoto: '' })}>X</span><img id="gallery-image" src={this.state.selectedPhoto} /></div></div> 
-				
+				<div style={{
+					visibility: this.state.selectedPhoto ? 'visible' : 'hidden',
+					opacity: this.state.selectedPhoto ? 1 : 0, transition: 'visibility 0.3s cubic-bezier(0, 0, 1, 1),opacity 0.3s  cubic-bezier(0, 0, 1, 1)',
+					width: '100vw',
+					height: '100vh',
+					position: 'fixed',
+					top: 0,
+					backgroundColor: 'rgba(0,0,0,0.9)', display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center'
+				}}>
+					<div><span style={{ fontSize: '2vw', color: 'white', fontWeight: 'bold', position: 'fixed', top: '2%', right: '2%', zIndex: 6, cursor: 'pointer' }} onClick={() => this.setState({ selectedPhoto: '' })}>X</span><img alt="galleryimg" id="gallery-image" src={this.state.selectedPhoto} /></div></div>
+
 				{/* <Modal isOpen={this.state.selectedPhoto} style={{backgroundColor:'black', width:'auto'}}>
 				 	<div>
 				 	<IoIosCloseCircle style={{height:'2vw', width:'2vw', color:'red', float:'right'}} onClick={() => this.setState({selectedPhoto:''})}/>
 				 <img src={this.state.selectedPhoto}  />	
 				 	</div>				
 				 </Modal>									 */}
-				
+
 			</div>
 		);
 	}

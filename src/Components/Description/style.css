@@ -3,12 +3,10 @@
     background-color: #002;
 }
 
-.filmDetailsContainer {
-    width:80%;
-}
 
 .descFirstRow {
-    margin:1% 0px 20px 0px;
+    margin:10% 0px 20px 0px;
+    
 }
 
 .descFilmName{
@@ -28,18 +26,19 @@
 }
 
 .playButton{
-    border:0px; 
-    border-radius:10px; 
-    background-color:black; 
-    color:white; 
-    height:5vh; 
-    font-size:1.3vw;
-    width: 8vw; 
+    height:5vh;
+    width:80%; 
     display:flex; 
     flex-direction:row; 
+    align-items:center; 
     justify-content:center; 
-    align-items:center;
+    font-size: 0.25; 
+    color:white; 
+    background-color:black; 
+    border:0px;
+    border-radius: 10px; 
     cursor:pointer;
+    margin-top:7%
 }
 
 .descBody{ 
@@ -60,23 +59,19 @@
 }
 
 .descCloseContainer{
-   display:flex;
-   flex-direction:row;
-   justify-content:flex-end;
-    width:80%; 
-    margin-right:10vw; 
-    margin-top:5%; 
-    cursor:pointer;
+   position: absolute;
+   right: 5%;
 }
 
 .descCloseIcon{
+    height:2vw; 
     height:2vw; 
     width:2vw;
     color:red;
 }
 
 .descPlayButton{
-    height:10vh; 
+    height:5vh;
     width:80%; 
     display:flex; 
     flex-direction:row; 
@@ -92,8 +87,8 @@
 }
 
 .descPlayIcon{
-    height:2vw; 
-    width:2vw;
+    height:5vw; 
+    width:5vw;
     color:red; 
     margin-right:1vw;
 }
@@ -107,4 +102,14 @@
     margin-left: 10px;
 }
 
-@media screen and (max-width:600px){}
+@media only screen and (max-width:600px){
+
+    
+    .descCloseIcon{
+        height:5vw; 
+        height:5vw; 
+        width:8vw;
+        
+    }
+   
+}

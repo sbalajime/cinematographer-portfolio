@@ -2,19 +2,19 @@ import React, { Component } from 'react';
 import { SocialIcon } from 'react-social-icons';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import ReactRevealText from 'react-reveal-text';
-import {data} from './data';
+import { data } from './data';
 import './style.css';
 
 class AboutMe extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state={
+        this.state = {
             reveal: false
         }
     }
 
-    componentDidMount(){
-        setTimeout(() => {this.setState({reveal: true})}, 200);
+    componentDidMount() {
+        setTimeout(() => { this.setState({ reveal: true }) }, 200);
     }
 
     render() {
@@ -22,8 +22,8 @@ class AboutMe extends Component {
             <ScrollableAnchor id={'aboutMe'}>
                 <div className="aboutContainer">
                     <div>
-                        <img src='/selva.jpg' className="avatar" />
-                        {/* <span style={{ display: 'inline-block', fontSize: '3vw', verticalAlign: 'middle', marginLeft: 30 }}>	 */}			
+                        <img alt="mypic" src='/selva.jpg' className="avatar" />
+                        {/* <span style={{ display: 'inline-block', fontSize: '3vw', verticalAlign: 'middle', marginLeft: 30 }}>	 */}
                         <ReactRevealText
                             text="YUVAN SELVA"
                             show={this.state.reveal}
@@ -33,7 +33,7 @@ class AboutMe extends Component {
                     <p className="textContainer">
                         <span className="greetText" role="img" aria-label="sheep">Hi ! 👋</span>
                         {data.text}
-                         <span role="img" aria-label="sheep">🙂</span>
+                        <span role="img" aria-label="sheep">🙂</span>
                     </p>
                     <div className="flexRowJEnd">
                         <SocialIcon className="socialIcon" url='https://twitter.com/yuvan_selva' />
