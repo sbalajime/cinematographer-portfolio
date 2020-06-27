@@ -56,13 +56,14 @@ class Description extends Component {
                                             Synopsis:
                                         <div className="descBodyText">{selectedFilm.summary}</div>
                                         </div>
-                                        <div className="descBody">
-                                            Personal Notes:
-                    <div className="descBodyText">{selectedFilm.personalNote}</div>
-                                        </div>
+                                        {selectedFilm.personalNote &&
+                                            <div className="descBody">
+                                                Personal Notes:
+                                        <div className="descBodyText">{selectedFilm.personalNote}</div>
+                                            </div>}
                                         <div className="descBody">
                                             Trivia:
-                    <div className="descBodyText">{selectedFilm.trivia}</div>
+                                        <div className="descBodyText">{selectedFilm.trivia}</div>
                                         </div>
                                     </div>
                                     <div className="descRightSec">
