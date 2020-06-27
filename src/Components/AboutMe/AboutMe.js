@@ -37,9 +37,9 @@ class AboutMe extends Component {
                         
                         </div>
                         <div >
-                            <SocialIcon className="socialIcon" url='https://twitter.com/yuvan_selva' />
-                            <SocialIcon className="socialIcon" url='https://www.facebook.com/u1selva' />
-                            <SocialIcon className="socialIcon" url='https://www.instagram.com/yuvanselva/' />
+                            <SocialIcon target="_blank" className="socialIcon" url='https://twitter.com/yuvan_selva' />
+                            <SocialIcon target="_blank" className="socialIcon" url='https://www.facebook.com/u1selva' />
+                            <SocialIcon target="_blank" className="socialIcon" url='https://www.instagram.com/yuvanselva/' />
                         </div>
                     </div>
                     <center className="menuItem">Recent Work</center>
