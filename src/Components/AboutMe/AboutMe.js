@@ -20,27 +20,35 @@ class AboutMe extends Component {
     render() {
         return (
             <ScrollableAnchor id={'aboutMe'}>
-                <div className="aboutContainer">
-                    <div>
-                        <img alt="mypic" src='/selva.jpg' className="avatar" />
-                        {/* <span style={{ display: 'inline-block', fontSize: '3vw', verticalAlign: 'middle', marginLeft: 30 }}>	 */}
-                        <ReactRevealText
-                            text="YUVAN SELVA"
-                            show={this.state.reveal}
-                            className="animateName"
-                        />
+                <div>
+                    <div className="flexColACenter aboutMe" style={{height:'30vh'}}>
+                        <div>
+                            <ReactRevealText
+                                text="YUVAN SELVA"
+                                show={this.state.reveal}
+                                className="animateName"
+                            />
+                        </div>
+                        <div>
+                            <ReactRevealText
+                                text="Cinematographer | Editor | DI Colorist"
+                                show={this.state.reveal}
+                            />
+                        
+                        </div>
+                        <div >
+                            <SocialIcon className="socialIcon" url='https://twitter.com/yuvan_selva' />
+                            <SocialIcon className="socialIcon" url='https://www.facebook.com/u1selva' />
+                            <SocialIcon className="socialIcon" url='https://www.instagram.com/yuvanselva/' />
+                        </div>
                     </div>
-                    <p className="textContainer">
-                        <span className="greetText" role="img" aria-label="sheep">Hi ! 👋</span>
-                        {data.text}
-                        <span role="img" aria-label="sheep">🙂</span>
-                    </p>
-                    <div className="flexRowJEnd">
-                        <SocialIcon className="socialIcon" url='https://twitter.com/yuvan_selva' />
-                        <SocialIcon className="socialIcon" url='https://www.facebook.com/u1selva' />
-                        <SocialIcon className="socialIcon" url='https://www.instagram.com/yuvanselva/' />
-                    </div>
+                    <span className="menuItem">My Recent Work:</span>
+                    <div class="video-container">
+                        <iframe  src="https://www.youtube.com/embed/f9kp3reFjoo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>              
                 </div>
+                
+                
             </ScrollableAnchor>
         )
     }

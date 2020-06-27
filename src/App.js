@@ -42,7 +42,6 @@ class App extends Component {
 		return (
 			<div className="appWrapper">
 				<div className="mainContainer">
-					<Menu />
 					<AboutMe />
 				</div>
 				<ScrollableAnchor id={'portfolio'}>

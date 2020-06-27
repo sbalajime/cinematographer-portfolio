@@ -69,7 +69,6 @@ video {
   display:flex;
   flex-direction: column;
   width: 100%;
-  height: 130vh;
 }
 #myVideo {
   position: absolute;
@@ -110,6 +109,13 @@ video {
   flex-direction: row;
   align-items:center;
 }
+
+.flexColACenter{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+}
+
 
 .flexRowJEnd{
   display:flex;
