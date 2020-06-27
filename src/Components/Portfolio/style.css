@@ -10,6 +10,7 @@
 }
 
 .yearTitle{ 
+    letter-spacing: .10em;
     font-size: 2.7vw;
     font-weight: 100; 
     text-align:center; 

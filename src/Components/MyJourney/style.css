@@ -5,6 +5,10 @@
     margin-top: 10px
 }
 
+.menuItem{
+    letter-spacing: .10em;
+}
+
 @media screen and (max-width:600px){
     .myJourney p {
         font-size: 15px;

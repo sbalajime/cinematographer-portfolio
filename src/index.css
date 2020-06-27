@@ -48,6 +48,7 @@ body {
   transition-duration: 500ms;
 }
 #card:hover {
+  letter-spacing: .25em;
   transform: scale(1.2);
   transition-duration: 500ms;
 }

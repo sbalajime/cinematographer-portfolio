@@ -64,6 +64,7 @@
 
 .aboutMe > * {
     margin-top: 20px;
+   letter-spacing: .75em;
 }
 
 .video-container {
