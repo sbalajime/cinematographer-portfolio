@@ -47,11 +47,15 @@ body {
 #cardImage {
   transition-duration: 500ms;
 }
+
+
 #card:hover {
   letter-spacing: .25em;
   transform: scale(1.2);
   transition-duration: 500ms;
 }
+
+
 a, a:link, a:visited, a:hover, a:active{
   text-decoration: none;
   color: white;
@@ -150,9 +154,17 @@ video {
   }	
 }	
 
-@media screen and (max-width: 600px) {	
+@media screen and (max-width: 800px) {	
   .menuItem {	
       font-size: 20px;	
       font-weight: 500;	
   }	
+  
+#content {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-content: center;
+  opacity:.75
+}
 } 
