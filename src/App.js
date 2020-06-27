@@ -10,6 +10,7 @@ import newData from './Components/newData';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Gallery from "react-photo-gallery";
 import photos from './Components/photos';
+import spot from './Components/spot'
 
 library.add(faIgloo)
 library.add(faChevronRight)
@@ -24,7 +25,8 @@ class App extends Component {
 		super(props);
 		this.state = {
 			selectedFilm: {},
-			photo: ''
+			photo: '',
+			gallery: ""
 		}
 	}
 
@@ -36,9 +38,13 @@ class App extends Component {
 		} else this.setState({ selectedFilm: {} })
 	}
 
+	handleClick = (e) => {
+		const { value } = e.target
+		this.setState({ gallery: value })
+	}
+
 	render() {
-		const { selectedFilm } = this.state;
-		console.log("selectedFilm", selectedFilm, 'selectedPhoto', this.state.selectedPhoto);
+		const { selectedFilm, gallery } = this.state;
 		return (
 			<div className="appWrapper">
 				<div className="mainContainer">
@@ -57,7 +63,13 @@ class App extends Component {
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best shortfilm</div>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best Colorist</div> */}
 						<center className="menuItem">Gallery</center>
-						<Gallery photos={photos} direction={"row"} onClick={(e, { photo }) => { console.log('photot', e, e.target.getBoundingClientRect()); this.setState({ selectedPhoto: photo.src }) }} />
+						<button value="photos" onClick={this.handleClick}>Guest, Workshops & more</button>
+						<button value="spot" onClick={this.handleClick}>Spots</button>
+
+						{gallery === "photos" ?
+							<Gallery photos={photos} direction={"row"} onClick={(e, { photo }) => { console.log('photot', e, e.target.getBoundingClientRect()); this.setState({ selectedPhoto: photo.src }) }} />
+							: <Gallery photos={spot} direction={"row"} onClick={(e, { photo }) => { console.log('photot', e, e.target.getBoundingClientRect()); this.setState({ selectedPhoto: photo.src }) }} />
+						}
 
 					</div>
 				</ScrollableAnchor>

@@ -29,6 +29,25 @@
   font-size: large;
 }
 
+button {
+  background-color: transparent;
+  border:0;
+  color:white;
+  font-size: 1.5em;
+  margin-left: 5%;
+}
+
+button:hover {
+  background-color: white;
+  border:0;
+  color:black;
+  font-size: 1.5em;
+}
+
+button:focus{
+  outline: none;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -49,4 +68,18 @@
   .card{
     margin:20px;
   }
+
+  
+button {
+  background-color: transparent;
+  border:0;
+  color:white;
+  font-size: 1em;
+  margin-left: 3%;
+}
+
+button:hover {
+  font-size: 1em;
+}
+
  }
