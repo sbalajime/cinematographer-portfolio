@@ -42,9 +42,9 @@ class AboutMe extends Component {
                             <SocialIcon className="socialIcon" url='https://www.instagram.com/yuvanselva/' />
                         </div>
                     </div>
-                    <span className="menuItem">My Recent Work:</span>
+                    <center className="menuItem">Recent Work</center>
                     <div class="video-container">
-                        <iframe  src="https://www.youtube.com/embed/f9kp3reFjoo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe  src="https://www.youtube.com/embed/f9kp3reFjoo?autoplay=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>              
                 </div>
                 
