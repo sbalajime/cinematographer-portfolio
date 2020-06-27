@@ -2,13 +2,13 @@
     flex-direction:column; 
     margin-top:10vh;
 }
-
+/*
 .cardContainer{
     border-bottom:2px solid white;
     border-top:1px solid white; 
     border-radius:50px;
 }
-
+*/
 .yearTitle{ 
     letter-spacing: .10em;
     font-size: 2.7vw;
@@ -29,6 +29,8 @@
     overflow-y:hidden;
 }
 
-@media only screen and (max-width:900){
-    
+@media screen and (max-width:800px){
+    .yearTitle{        
+        font-size: 5.4vw;
+    }
 }
