@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { SocialIcon } from 'react-social-icons';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import ReactRevealText from 'react-reveal-text';
-import { data } from './data';
+
 import './style.css';
 
 class AboutMe extends Component {
@@ -44,7 +44,7 @@ class AboutMe extends Component {
                     </div>
                     <center className="menuItem">Recent Work</center>
                     <div class="video-container">
-                        <iframe  src="https://www.youtube.com/embed/f9kp3reFjoo?autoplay=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe title="recent-work"  src="https://www.youtube.com/embed/f9kp3reFjoo?autoplay=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>              
                 </div>
                 

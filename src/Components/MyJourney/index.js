@@ -4,7 +4,7 @@ const MyJourney = () => {
     return <div className="myJourney">
         <center className="menuItem">My Journey</center>
         <div className="flexRowAJCenter">
-            <img src="/career_progress.svg" className="careerImg" width="40%" height="700px"/>
+            <img src="/career_progress.svg" className="careerImg" width="40%" height="700px" alt="career"/>
             <div>
             <p>
                 I am Yuvan Selva (official name) 1996 born. I am a qualified http://B.Sc Visual Communication student from SRM University, Kattankulathur, Chennai passed out in the year 2016.

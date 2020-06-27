@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import Menu from './Components/Menu/Menu';
 import AboutMe from './Components/AboutMe/AboutMe';
 import Portfolio from './Components/Portfolio/Portfolio';
 import MyJourney from './Components/MyJourney';
