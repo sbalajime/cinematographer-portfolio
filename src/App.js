@@ -63,9 +63,10 @@ class App extends Component {
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best shortfilm</div>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best Colorist</div> */}
 						<center className="menuItem">Gallery</center>
-						<button value="photos" onClick={this.handleClick}>Guest, Workshops & more</button>
-						<button value="spot" onClick={this.handleClick}>Spots</button>
-
+						<div className="btnContainer">
+							<button value="photos" onClick={this.handleClick}>Guest, Workshops</button>
+							<button value="spot" onClick={this.handleClick}>Spots</button>
+						</div>
 						{gallery === "photos" ?
 							<Gallery photos={photos} direction={"row"} onClick={(e, { photo }) => { console.log('photot', e, e.target.getBoundingClientRect()); this.setState({ selectedPhoto: photo.src }) }} />
 							: <Gallery photos={spot} direction={"row"} onClick={(e, { photo }) => { console.log('photot', e, e.target.getBoundingClientRect()); this.setState({ selectedPhoto: photo.src }) }} />
@@ -76,8 +77,9 @@ class App extends Component {
 				<div style={{
 					visibility: this.state.selectedPhoto ? 'visible' : 'hidden',
 					opacity: this.state.selectedPhoto ? 1 : 0, transition: 'visibility 0.3s cubic-bezier(0, 0, 1, 1),opacity 0.3s  cubic-bezier(0, 0, 1, 1)',
-					width: '100vw',
-					height: '100vh',
+					width: '100%',
+					height: 'auto',
+					backgroundImage: 'contain',
 					position: 'fixed',
 					top: 0,
 					backgroundColor: 'rgba(0,0,0,0.9)', display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center'
@@ -86,7 +88,7 @@ class App extends Component {
 				</div>
 				<MyJourney />
 
-			</div>
+			</div >
 		);
 	}
 }

@@ -28,13 +28,20 @@
 .App-intro {
   font-size: large;
 }
+.btnContainer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 
+}
 button {
+  width: 40%;
+  height: 50px;
   background-color: transparent;
   border:0;
-  color:white;
+  color:white;  
   font-size: 1.5em;
-  margin-left: 5%;
+  cursor: pointer;
 }
 
 button:hover {
