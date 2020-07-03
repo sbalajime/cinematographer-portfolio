@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { IoIosCloseCircle, IoIosPlay } from "react-icons/io";
 import './style.css';
-
+import {s3Bucket} from '../../config';
 class Description extends Component {
 
     render() {
@@ -12,7 +12,7 @@ class Description extends Component {
                     <div id="videoDiv">
                         <div id="videoBlock">
                             <video loop autoPlay >
-                                <source src={selectedFilm.sampleVideo} type="video/mp4" />
+                                <source src={`${s3Bucket}/preview/${selectedFilm.year}/${selectedFilm.sampleVideo}`} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
                             <div id="videoMessage">

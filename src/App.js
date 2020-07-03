@@ -57,7 +57,7 @@ class App extends Component {
 					</div>
 				</ScrollableAnchor>
 				<ScrollableAnchor id={'gallery'}>
-					<div style={{ height: '80vh', overflowY: 'hidden' }}>
+					<div>
 						{/* <center style={{fontSize:'3vw', marginBottom:50}}>Awards & Recognition</center>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>i) Got award for best cinematographer</div>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best shortfilm</div>
@@ -68,8 +68,8 @@ class App extends Component {
 							<button value="spot" onClick={this.handleClick}>Spots</button>
 						</div>
 						{gallery === "photos" ?
-							<Gallery photos={photos} direction={"row"} onClick={(e, { photo }) => { console.log('photot', e, e.target.getBoundingClientRect()); this.setState({ selectedPhoto: photo.src }) }} />
-							: <Gallery photos={spot} direction={"row"} onClick={(e, { photo }) => { console.log('photot', e, e.target.getBoundingClientRect()); this.setState({ selectedPhoto: photo.src }) }} />
+							<Gallery photos={photos} direction={"row"} onClick={(e, { photo }) => { console.log('photot', e, e.target.getBoundingClientRect()); this.setState({ selectedPhoto: photo.src.replace('thumbnail', 'original') }) }} />
+							: <Gallery photos={spot} direction={"row"} onClick={(e, { photo }) => { console.log('photot', e, e.target.getBoundingClientRect()); this.setState({ selectedPhoto: photo.src.replace('thumbnail', 'original') }) }} />
 						}
 
 					</div>
@@ -78,13 +78,13 @@ class App extends Component {
 					visibility: this.state.selectedPhoto ? 'visible' : 'hidden',
 					opacity: this.state.selectedPhoto ? 1 : 0, transition: 'visibility 0.3s cubic-bezier(0, 0, 1, 1),opacity 0.3s  cubic-bezier(0, 0, 1, 1)',
 					width: '100%',
-					height: 'auto',
+					height: '100%',
 					backgroundImage: 'contain',
 					position: 'fixed',
 					top: 0,
 					backgroundColor: 'rgba(0,0,0,0.9)', display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center'
 				}}>
-					<div><span style={{ fontSize: '2vw', color: 'white', fontWeight: 'bold', position: 'fixed', top: '2%', right: '2%', zIndex: 6, cursor: 'pointer' }} onClick={() => this.setState({ selectedPhoto: '' })}>X</span><img alt="galleryimg" id="gallery-image" src={this.state.selectedPhoto} /></div>
+					<div><span style={{ fontSize: '2vw', color: 'white', fontWeight: 'bold', position: 'fixed', top: '2%', right: '2%', zIndex: 6, cursor: 'pointer' }} onClick={() => this.setState({ selectedPhoto: '' })}>X</span><img alt="galleryimg" id="gallery-image" src={this.state.selectedPhoto} style={{objectFit:'contain', maxHeight:'90vh'}}/></div>
 				</div>
 				<MyJourney />
 

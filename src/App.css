@@ -3,10 +3,8 @@
 }
 
 .appWrapper{
-  padding:100px;
   padding-top:20px;
-  max-width: 1300px;
-  margin:auto;
+  width:100%;
 }
 
 .App-logo {

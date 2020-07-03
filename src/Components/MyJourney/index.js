@@ -1,13 +1,16 @@
 import React from 'react';
 import './style.css';
 const MyJourney = () => {
-    return <div className="myJourney">
+    return <div className="myJourney" style={{maxWidth: 1300, margin:'auto', padding: 100}}>
         <center className="menuItem">My Journey</center>
         <div className="flexRowAJCenter">
-            <img src="/career_progress.svg" className="careerImg" width="40%" height="700px" alt="career" />
+            <div style={{width:'40%', padding:30}}>
+                <img src="/career_progress.jpg" className="careerImg"  alt="career" style={{margin:'auto', display:'block'}}/>
+            </div>
+            
             <div>
                 <p>
-                    I am Yuvan Selva (official name) 1996 born. I am a qualified http://B.Sc Visual Communication student from SRM University, Kattankulathur, Chennai passed out in the year 2016.
+                    I am Yuvan Selva (official name) 1996 born. I am a qualified B.Sc Visual Communication student from SRM University, Kattankulathur, Chennai passed out in the year 2016.
                 </p>
                 <p>
                     Photography and Painting were my initial interests during my school days. After entering the college, I got an opportunity to use one of my friend’s basic DSLR and I was amazed by how a picture looks way more cooler in DSLRs from normal fancy digicams.
@@ -16,7 +19,7 @@ const MyJourney = () => {
                     This amazement and curiosity let me into shooting not only pictures but also videos. Whenever my friend’s camera is available, I used to take them and go for a walk inside our hostel and campus and shoot whatever I see.
                 </p>
                 <p>
-                    During my early days of college one of my classmate decided to take a short film. Since everybody were amateurs nobody knows to handle cinematography. Adding to it our classes for photography and cinematography would only start next year. So he picked me randomly just by seeing the facebook DP of myself holding a DSLR. He still didn’t have the confidence so he hired another senior guy and that’s were I shot my first short film as Co-Cinematographer.
+                    During my early days of college one of my classmates decided to take a short film. Since everybody were amateurs nobody knows to handle cinematography. Adding to it our classes for photography and cinematography would only start next year. So he picked me randomly just by seeing the facebook DP of myself holding a DSLR. He still didn’t have the confidence so he hired another senior guy and that’s were I shot my first short film as Co-Cinematographer.
                 </p>
                 <p>
                     I learned a lot during the process and later we formed another team and decided to make another short film. But unfortunately everyone in my team know either Acting or Direction. So it became mandatory for me to learn other aspects of filmmaking like Editing, Colour Grading, Poster Designing, VFX etc.
