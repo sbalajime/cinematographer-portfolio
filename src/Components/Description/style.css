@@ -11,20 +11,17 @@
 }
 
 .descFilmName{
-    font-size: 25px;
-    margin-right: 50px; 
+    font-size: 25px;    
     font-weight: bold;
 }
 
 .descFilmType{
     width: 25%;
-    font-size: 10px;
-    margin-right: 50px;
+    font-size: 15px;
 }
 
 .descDuration{
     width: 25%;
-    margin-right: 50px;
     font-size:15px;
 }
 
@@ -45,12 +42,12 @@
 }
 
 .descBody{ 
-    font-size: 15px;
+    font-size: 18px;
     margin:20px 0px 20px 0px;
 }
 
 .descBodyText{
-    font-size: 13px; 
+    font-size: 18px; 
     margin-left: 25px;
 }
 
@@ -94,14 +91,20 @@
     color:red; 
     margin-right:1vw;
 }
+
+.crewContainer{
+    display: flex;
+    margin-left: 25px;
+}
+
 .crewDesignation{
-    font-size:12px;
+    font-size:18px;
     font-weight:bold;
+    margin-right: 5px;
 }
 
 .crewMember{
-    font-size:10px; 
-    margin-left: 10px;
+    font-size:18px; 
 }
 
 @media only screen and (max-width:600px){
@@ -124,6 +127,24 @@
 
 .descPlayButton{
     font-size: 2vh;
+}
+
+
+.descBody{ 
+    font-size: 13px;
+}
+
+.descBodyText{
+    font-size: 13px; 
+    
+}
+
+.crewDesignation{
+    font-size:13px;
+}
+
+.crewMember{
+    font-size:13px; 
 }
 
 

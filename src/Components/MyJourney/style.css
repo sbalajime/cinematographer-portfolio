@@ -1,21 +1,55 @@
+
+
+.myJourney{
+   width: auto;
+}
+
 .myJourney p {
     font-size: 20px;
-    max-width: 1000px;
     margin:auto;
     margin-top: 10px
+}
+
+.myImg{
+    margin-left: 5%;
+    display: inline-block;
+    width: 45%;
+    height: 725px;
+    border-radius: 10px;
+}
+
+.myContent{
+    
+    display: inline-block;
+    width: 45%;
+    padding: 2%;
+}
+
+.myJourney img{
+    border-radius: 5px;
 }
 
 .menuItem{
     letter-spacing: .10em;
 }
 
-@media screen and (max-width:600px){
-    .myJourney p {
-        font-size: 15px;
-        margin:auto;
-        margin: 10px;
-    }
-    .careerImg {
-        display:none;
-    }
+@media screen and (max-width:800px){
+   
+.myImg{
+    
+    display: block;
+    width:75%;
+    padding: 5%;
+    height: 350px;
+}
+
+.myContent{
+    
+    display: block;
+    width: 90%;
+    padding: 2%;
+
+}
+   
+ 
 }

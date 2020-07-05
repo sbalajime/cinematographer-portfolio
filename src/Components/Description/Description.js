@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { IoIosCloseCircle, IoIosPlay } from "react-icons/io";
 import './style.css';
-import {s3Bucket} from '../../config';
+import { s3Bucket } from '../../config';
 class Description extends Component {
 
     render() {
@@ -82,10 +82,10 @@ class Description extends Component {
 const CrewDetails = props => {
     const { crew } = props;
     return (Object.keys(crew).map((key, index) =>
-        <div style={{ marginLeft: 30 }} key={index}>
+        <div className="crewContainer" key={index}>
             <span className="crewDesignation">{key}:</span>
             <span className="crewMember">{typeof (crew[key]) === "object" ? crew[key].join(', ') : crew[key]}</span>
-        </div>
+        </div >
     ))
 }
 
