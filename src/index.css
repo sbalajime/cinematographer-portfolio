@@ -192,3 +192,12 @@ video {
   border-bottom: 3px solid #fff !important;
   padding-left: 3px !important;
 }
+
+
+@media screen and (max-width:800px){
+  .react-tabs__tab {
+    padding: 10px !important;
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
