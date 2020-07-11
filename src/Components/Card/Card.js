@@ -12,7 +12,7 @@ class Card extends Component {
                     id="cardImage"
                 />
                 <div id="content">
-                    <div className={`filmNameContainer ${film.name.length > 10 ? `longFilmName` : ``}`}>
+                    <div className={`filmNameContainer ${film.name.length >= 10 ? `longFilmName` : ``}`}>
                         <span className="filmName">{film.name}</span>
                     </div>
                 </div>

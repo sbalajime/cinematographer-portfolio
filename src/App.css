@@ -32,26 +32,6 @@
   justify-content: flex-start;
 
 }
-button {
-  width: 40%;
-  height: 50px;
-  background-color: transparent;
-  border:0;
-  color:white;  
-  font-size: 1.5em;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: white;
-  border:0;
-  color:black;
-  font-size: 1.5em;
-}
-
-button:focus{
-  outline: none;
-}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
@@ -75,16 +55,5 @@ button:focus{
   }
 
   
-button {
-  background-color: transparent;
-  border:0;
-  color:white;
-  font-size: 1em;
-  margin-left: 3%;
-}
-
-button:hover {
-  font-size: 1em;
-}
 
  }
