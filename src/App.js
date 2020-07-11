@@ -91,7 +91,7 @@ class App extends Component {
 					top: 0,
 					backgroundColor: 'rgba(0,0,0,0.9)', display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center'
 				}}>
-					<div><span style={{ fontSize: '2vw', color: 'white', fontWeight: 'bold', position: 'fixed', top: '2%', right: '2%', zIndex: 6, cursor: 'pointer' }} onClick={() => this.setState({ selectedPhoto: '' })}>X</span><img alt="galleryimg" id="gallery-image" src={this.state.selectedPhoto} style={{objectFit:'contain', maxHeight:'90vh'}}/></div>
+					<div><span style={{ fontSize: '30px', color: 'white', fontWeight: 'bold', position: 'fixed', top: '2%', right: '2%', zIndex: 6, cursor: 'pointer' }} onClick={() => this.setState({ selectedPhoto: '' })}>X</span><img alt="galleryimg" id="gallery-image" src={this.state.selectedPhoto} style={{objectFit:'contain', maxHeight:'90vh'}}/></div>
 				</div>
 				<MyJourney />
 
