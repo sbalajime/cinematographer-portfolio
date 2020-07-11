@@ -11,7 +11,7 @@ class Description extends Component {
                 <div id={selectedFilm.name}>
                     <div id="videoDiv">
                         <div id="videoBlock">
-                            <video loop autoPlay >
+                            <video loop autoPlay playsInline muted>
                                 <source src={`${s3Bucket}/preview/${selectedFilm.year}/${selectedFilm.sampleVideo}`} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
