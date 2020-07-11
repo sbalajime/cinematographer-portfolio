@@ -48,7 +48,7 @@ class AboutMe extends Component {
                         <span role="img" aria-label="popper">🎉 </span>
                     </center>
                     <div class="video-container">
-                        <iframe title="recent-work"  src="https://www.youtube.com/embed/f9kp3reFjoo?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe title="recent-work"  src="https://www.youtube.com/embed/f9kp3reFjoo?autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>              
                 </div>
                 
