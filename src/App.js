@@ -46,7 +46,7 @@ class App extends Component {
 	}
 
 	render() {
-		const { selectedFilm, gallery } = this.state;
+		const { selectedFilm } = this.state;
 		return (
 			<div className="appWrapper">
 				<div className="mainContainer">
@@ -67,8 +67,8 @@ class App extends Component {
 						<center className="menuItem">Gallery</center>
 						<Tabs>
 							<TabList>
-							<Tab> 📖 Guest, Workshops</Tab>
-							<Tab> 🎥 Spots </Tab>
+							<Tab> <span role="img" aria-label="book">📖 </span> Guest, Workshops</Tab>
+							<Tab> <span role="img" aria-label="video camera"> 🎥 </span> Spots </Tab>
 							</TabList>
 						
 							<TabPanel>
