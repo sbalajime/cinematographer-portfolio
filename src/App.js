@@ -10,7 +10,9 @@ import newData from './Components/newData';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Gallery from "react-photo-gallery";
 import photos from './Components/photos';
-import spot from './Components/spot'
+import spot from './Components/spot';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 library.add(faIgloo)
 library.add(faChevronRight)
@@ -63,14 +65,19 @@ class App extends Component {
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best shortfilm</div>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best Colorist</div> */}
 						<center className="menuItem">Gallery</center>
-						<div className="btnContainer">
-							<button value="photos" onClick={this.handleClick}>Guest, Workshops</button>
-							<button value="spot" onClick={this.handleClick}>Spots</button>
-						</div>
-						{gallery === "photos" ?
+						<Tabs>
+							<TabList>
+							<Tab> 📖 Guest, Workshops</Tab>
+							<Tab> 🎥 Spots </Tab>
+							</TabList>
+						
+							<TabPanel>
 							<Gallery photos={photos} direction={"row"} onClick={(e, { photo }) => { console.log('photot', e, e.target.getBoundingClientRect()); this.setState({ selectedPhoto: photo.src.replace('thumbnail', 'original') }) }} />
-							: <Gallery photos={spot} direction={"row"} onClick={(e, { photo }) => { console.log('photot', e, e.target.getBoundingClientRect()); this.setState({ selectedPhoto: photo.src.replace('thumbnail', 'original') }) }} />
-						}
+							</TabPanel>
+							<TabPanel>
+							<Gallery photos={spot} direction={"row"} onClick={(e, { photo }) => { console.log('photot', e, e.target.getBoundingClientRect()); this.setState({ selectedPhoto: photo.src.replace('thumbnail', 'original') }) }} />
+							</TabPanel>
+						</Tabs>
 
 					</div>
 				</ScrollableAnchor>

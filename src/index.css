@@ -145,7 +145,8 @@ video {
 .menuItem {	
   font-size: 50px;	
   font-weight: 500;	
-  margin-top: 30px;	
+  margin-top: 80px;
+  margin-bottom: 50px;	
 }	
 @media screen and (max-width: 900px) {	
   .menuItem {	
@@ -168,3 +169,11 @@ video {
   opacity:.75
 }
 } 
+
+.react-tabs__tab {
+  min-width: 100px !important;
+  text-align: center;
+  padding: 100px;
+  font-size: 30px;
+  padding: 15px !important;
+}
