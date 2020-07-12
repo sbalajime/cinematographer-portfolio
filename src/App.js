@@ -13,6 +13,7 @@ import photos from './Components/photos';
 import spot from './Components/spot';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import Footer from './Components/Footer';
 
 library.add(faIgloo)
 library.add(faChevronRight)
@@ -89,7 +90,7 @@ class App extends Component {
 					<div><span style={{ fontSize: '30px', color: 'white', fontWeight: 'bold', position: 'fixed', top: '2%', right: '2%', zIndex: 6, cursor: 'pointer' }} onClick={() => this.setState({ selectedPhoto: '' })}>X</span><img alt="galleryimg" id="gallery-image" src={this.state.selectedPhoto} style={{ objectFit: 'contain', maxHeight: '90vh' }} /></div>
 				</div>
 				<MyJourney />
-
+				<Footer />
 			</div >
 		);
 	}
