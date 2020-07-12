@@ -28,7 +28,7 @@ const MyJourney = () => {
                     Now am an Independent Cinematographer, Editor and DI Colourist of over 25 million viewership on Youtube Community !
                     </p>
             </div>
-        </div>    
+        </div>
 
     </div >
 }
