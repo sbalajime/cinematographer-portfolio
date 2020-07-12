@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css';
 const MyJourney = () => {
     return <div className="myJourney" style={{maxWidth: 1300, margin:'auto'}}>
-        <center className="menuItem">MY JOURNEY</center>
+        <center className="menuItem">MY LITTLE JOURNEY</center>
         <div style={{display: 'flex', alignItems:'center'}}>
             <img src="/career_progress.jpg" className="myImg" alt="career" />
             <div className="myContent">
