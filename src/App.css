@@ -57,3 +57,36 @@
   
 
  }
+
+ @media only screen and (min-width: 1300px) {
+
+  .descFilmName{
+    font-size: 40px !important;
+    letter-spacing: 20px;
+  }
+  .descFilmType{
+    font-size: 30px !important;
+  }
+  .descDuration {
+    font-size:30px !important;
+  }
+
+  .descBody, .crewDesignation,  .crewMember, .descBodyText {
+    font-size: 33px !important;
+  }
+
+  .descPlayButton {
+    font-size: 33px !important;
+    height: 70px !important;
+    padding: 10px 30px 10px 30px !important;
+  }
+
+  .myJourney p {
+    font-size: 25px !important;
+  }
+
+  .menuItem {
+    font-size: 80px;
+  }
+
+ }

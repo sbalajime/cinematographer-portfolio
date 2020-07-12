@@ -34,7 +34,7 @@ class Description extends Component {
                                                 Duration: {selectedFilm.duration}
                                             </div>
                                             {selectedFilm.trailer ? <div className="descFilmType">
-                                                <button className="playButton"
+                                                <button className="descPlayButton"
                                                     onClick={() => window.open(`https://www.youtube.com/watch?v=${selectedFilm.trailer}`)}>Trailer</button> </div> : null}
 
                                             <div className="descFilmType">
