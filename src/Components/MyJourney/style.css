@@ -12,15 +12,17 @@
 
 .myImg{
     margin-left: 5%;
-    display: inline-block;
-    width: 40%;
+    display: inline-block;  
+    width: 35vw;    
+    height: auto;
     border-radius: 10px;
 }
 
 .myContent{
     
     display: inline-block;
-    width: 45%;
+    width: 45vw;
+    height: auto;
     padding: 2%;
 }
 

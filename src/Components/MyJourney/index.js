@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.css';
 const MyJourney = () => {
-    return <div className="myJourney" style={{maxWidth: 1300, margin:'auto'}}>
+    return <div className="myJourney" style={{ maxWidth: 1300, margin: 'auto' }}>
         <center className="menuItem">My Journey <span role="img" aria-label="progress"> 📈 </span></center>
-        <div style={{display: 'flex', alignItems:'center'}}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
             <img src="/career_progress.jpg" className="myImg" alt="career" />
             <div className="myContent">
                 <p>
@@ -28,7 +28,7 @@ const MyJourney = () => {
                     Now am an Independent Cinematographer, Editor and DI Colourist of over 25 million viewership on Youtube Community !
                     </p>
             </div>
-        </div>    
+        </div>
 
     </div >
 }
