@@ -27,6 +27,7 @@ background-color: transparent;
 .descFilmName{
     font-size: 25px;    
     font-weight: bold;
+    letter-spacing: 20px;
 }
 
 .descFilmType{

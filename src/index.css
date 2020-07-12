@@ -69,7 +69,7 @@ video {
 
 #videoDiv {width: 100%; height: 100%; position: relative;overflow:hidden;}
 #videoBlock {width: 100%; height: 100%;  display: flex;  justify-content: center; align-items: center;}
-#videoMessage { padding:30px;width: 100%; height:100%; position: absolute; top: 0; left: 0;  background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));}
+#videoMessage { padding:30px;padding-right: 0px;width: 100%; height:100%; position: absolute; top: 0; left: 0;  background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));}
 .mainContainer{
   display:flex;
   flex-direction: column;
