@@ -1,6 +1,6 @@
 import {s3Bucket} from '../config'
 
-let PHOTO_COUNT = 11;
+let PHOTO_COUNT = 12;
 let arr = [];
 for (let i=1;i<= PHOTO_COUNT;i++) {
   let obj = {

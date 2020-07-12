@@ -27,8 +27,6 @@ class Description extends Component {
                                             </div>
                                         </div>
                                         <div className="descFirstRow flexRowACenter" >
-
-
                                             <div className="descFilmType">{selectedFilm.type}</div>
                                             <div className="descDuration">
                                                 Duration: {selectedFilm.duration}
@@ -47,6 +45,7 @@ class Description extends Component {
                                             </button>
                                             </div>
                                         </div>
+                                        <div className="descFilmType">Genre: {selectedFilm.genre}</div>
                                         <div className="descBody">
                                             Crew: <div className="flexRowWrap">
                                                 <CrewDetails crew={selectedFilm.crew} />

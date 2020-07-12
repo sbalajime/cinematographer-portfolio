@@ -49,7 +49,7 @@ class App extends Component {
 				</div>
 				<ScrollableAnchor id={'portfolio'}>
 					<div className="portfolioSection">
-						<center className="menuItem">Portfolio</center>
+						<center className="menuItem">PORTFOLIO</center>
 						{Object.keys(newData).map((data, index) => <Portfolio data={newData[data]} key={index} title={data} selectedFilm={selectedFilm} selectFilm={this.selectFilm} />)}
 					</div>
 				</ScrollableAnchor>
@@ -59,7 +59,7 @@ class App extends Component {
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>i) Got award for best cinematographer</div>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best shortfilm</div>
 						<div style={{fontSize:'2.5vw', marginBottom:25}}>ii) Best Colorist</div> */}
-						<center className="menuItem">Gallery</center>
+						<center className="menuItem">GALLERY</center>
 						<Tabs>
 							<TabList>
 								<Tab> <span role="img" aria-label="book">📖 </span> Guest, Workshops</Tab>
