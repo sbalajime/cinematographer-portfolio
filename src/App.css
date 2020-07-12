@@ -54,6 +54,12 @@
     margin:20px;
   }
 
+  .descPlayButton{
+    padding: 0px 5px 0px 5px !important;
+    position: relative;
+    left: 50px;
+
+  }
   
 
  }
@@ -90,3 +96,25 @@
   }
 
  }
+
+
+ @media only screen and (max-width:800px){
+  #videoMessage {
+    padding: 10px;
+  }
+  .descFilmName{
+    font-size: 23px !important;
+    letter-spacing:15px;
+  }
+  .descFilmType{
+    font-size: 20px !important;
+  }
+  .descDuration {
+    font-size:20px !important;
+  }
+
+  .descBody, .crewDesignation,  .crewMember, .descBodyText {
+    font-size: 17px !important;
+  }
+}
+

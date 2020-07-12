@@ -111,15 +111,17 @@ background-color: transparent;
 
     
     .descCloseIcon{
-        height:5vw; 
-        height:5vw; 
-        width:8vw;        
+        width: 30px;
+        height: 30px;  
+        margin-top: 5px;   
+        position: relative;
+        right: 10px; 
     }
 
     
 .descPlayIcon{
-    height:8vw; 
-    width:8vw;
+    height:30px; 
+    width:30px;
     color:red; 
     margin-right:1vw;
 }
