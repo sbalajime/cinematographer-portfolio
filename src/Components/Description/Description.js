@@ -45,7 +45,7 @@ class Description extends Component {
                                             </button>
                                             </div>
                                         </div>
-                                        <div className="descFilmType">Genre: {selectedFilm.genre}</div>
+                                        <div className="descGenre">Genre: {selectedFilm.genre}</div>
                                         <div className="descBody">
                                             Crew: <div className="flexRowWrap">
                                                 <CrewDetails crew={selectedFilm.crew} />

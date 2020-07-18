@@ -70,7 +70,7 @@
     font-size: 40px !important;
     letter-spacing: 20px;
   }
-  .descFilmType{
+  .descFilmType, .descGenre{
     font-size: 30px !important;
   }
   .descDuration {
@@ -106,9 +106,10 @@
     font-size: 23px !important;
     letter-spacing:15px;
   }
-  .descFilmType{
+  .descFilmType, .descGenre{
     font-size: 20px !important;
   }
+
   .descDuration {
     font-size:20px !important;
   }
