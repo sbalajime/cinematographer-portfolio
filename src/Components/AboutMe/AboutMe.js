@@ -33,6 +33,7 @@ class AboutMe extends Component {
                             <ReactRevealText
                                 text="CINEMATOGRAPHER | EDITOR | DI COLORIST"
                                 show={this.state.reveal}
+                                className="roles"
                             />
                         
                         </div>
