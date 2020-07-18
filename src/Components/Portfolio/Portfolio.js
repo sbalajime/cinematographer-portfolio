@@ -15,7 +15,6 @@ class Portfolio extends Component {
     }
 
     componentDidMount() {
-        console.log('ref', this.scrollContainer.offsetWidth, this.scrollContainer.scrollWidth);
         if (this.scrollContainer.scrollWidth > this.scrollContainer.offsetWidth) {
             this.setState({ isCarousel: true });
         }
