@@ -16,6 +16,8 @@ background-color: transparent;
     height: 100vh !important;
 }
 
+
+
 .filmDetailsContainer{
     width:80%;
 }
@@ -113,7 +115,10 @@ background-color: transparent;
 }
 
 @media only screen and (max-width:800px){
-
+    .descTrivia{
+        display: none;
+       
+    }
     
     .descCloseIcon{
         width: 30px;
@@ -135,11 +140,15 @@ background-color: transparent;
 
 .descBody{ 
     font-size: 13px;
+} 
+
+.descTrivia{
+    font-size: 13px;
 }
 
-.descBodyText{
+ .descBodyText{
     font-size: 13px;     
-}
+} 
 
 .crewDesignation{
     font-size:13px;
@@ -151,3 +160,4 @@ background-color: transparent;
 
 
 }
+

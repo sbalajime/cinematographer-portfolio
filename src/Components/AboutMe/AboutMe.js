@@ -21,7 +21,7 @@ class AboutMe extends Component {
         return (
             <ScrollableAnchor id={'aboutMe'}>
                 <div>
-                    <div className="flexColACenter aboutMe" style={{height:'30vh'}}>
+                    <div className="flexColACenter aboutMe" style={{ height: '30vh' }}>
                         <div>
                             <ReactRevealText
                                 text="YUVAN SELVA"
@@ -35,7 +35,7 @@ class AboutMe extends Component {
                                 show={this.state.reveal}
                                 className="roles"
                             />
-                        
+
                         </div>
                         <div >
                             <SocialIcon target="_blank" className="socialIcon" url='https://twitter.com/yuvan_selva' />
@@ -43,15 +43,15 @@ class AboutMe extends Component {
                             <SocialIcon target="_blank" className="socialIcon" url='https://www.instagram.com/yuvanselva/' />
                         </div>
                     </div>
-                    <center className="menuItem"> 
-                            CHECK THIS OUT!
+                    <center className="menuItem">
+                        CHECK THIS OUT!
                     </center>
                     <div class="video-container">
-                        <iframe title="recent-work"  src="https://www.youtube.com/embed/f9kp3reFjoo?autoplay=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>              
+                        <iframe title="recent-work" src="https://www.youtube.com/embed/f9kp3reFjoo?playlist=f9kp3reFjoo&loop=1&autoplay=1&control=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
-                
-                
+
+
             </ScrollableAnchor>
         )
     }

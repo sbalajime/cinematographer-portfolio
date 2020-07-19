@@ -60,9 +60,10 @@ class Description extends Component {
                                                 Personal Notes:
                                         <div className="descBodyText">{selectedFilm.personalNote}</div>
                                             </div>}
-                                        <div className="descBody">
+                                        <div className="descTrivia">
                                             Trivia:
-                                        <div className="descBodyText">{selectedFilm.trivia}</div>
+                                        <div className="descBodyText">
+                                                {selectedFilm.trivia}</div>
                                         </div>
                                     </div>
                                     <div className="descRightSec">
