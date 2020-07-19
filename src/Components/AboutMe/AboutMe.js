@@ -47,7 +47,7 @@ class AboutMe extends Component {
                         CHECK THIS OUT!
                     </center>
                     <div class="video-container">
-                        <iframe title="recent-work" src="https://www.youtube.com/embed/f9kp3reFjoo?playlist=f9kp3reFjoo&loop=1&autoplay=1&control=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe title="recent-work" src="https://www.youtube.com/embed/f9kp3reFjoo?playlist=f9kp3reFjoo&loop=1&autoplay=1&control=0&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
 
