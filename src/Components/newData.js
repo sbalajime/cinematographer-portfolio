@@ -152,7 +152,7 @@ const filmData = {
         duration: '16:31',
         summary: 'An IT working girl misses her cab and she needs to make her way back home during late night, all alone.',
         //personalNote: 'It seemed very interested when a physics professor from a very reputed college in Chennai wanted to direct a short film with me handling the visuals. Not only for this reason, I was also waiting to make a project completely shot at night as it was a nightmare for me a long time since I haven’t tried one. Taking to one more step further I shot the whole short film with available street light sources.',
-        trivia: 'Since the whole shoot took place during late nights we were constantly interrupted by the patrol. During the second night shoot the whole crew including myself, the male actors and also the director were dragged into their police gypsy and kept under custody. This short film got awards for Direction, Music as Cinematography in various film festivals. The film was actually shot a week before the murder of Swati in Nungabakkam Railway station. The film got released almost 1.5 years after it’s been shot.',
+        trivia: '95% of the film is shot only under available street light source around 8 hours on 2 nights undergoing several admonishment from the night patrol. We almost got arrested on the second day. The film got released hardly after 1.5 years of completion.',
         crew: {
             Director: 'Vijay Ayyanar',
             "Original Music": "A.K. Priyan",
@@ -165,7 +165,7 @@ const filmData = {
             Lights: 'Natural Source',
         }
     }, {
-        name: 'ADIYAE AZHAGE',
+        name: 'ADIYE AZHAGE',
         videoId: 'BZVXAthmBBc',
         thumbnail: '0',
         trailer: 'O4c0hDfdlBA',
@@ -175,7 +175,7 @@ const filmData = {
         duration: '06:39',
         summary: 'Two love stories, One is about to mingle together and the other is about to break apart.',
         //personalNote: 'I got a call from Samir Ahmed FL when I was in my native, he introduced himself as a person with more than 50k followers in Facebook and he wanted me to handle the visuals for a song in which he would feature. I blindly accepted this offer immediately for three reasons, I haven’t done any music videos so far and was hardly waiting for, I have done around 6 projects and nothing reached more than 6k views on YouTube and since He said he got 50k followers I wish it would be my first project to reach atleast 25k and finally this is going to be my first project in Coimbatore so I expected after this project I would also be getting projects from Coimbatore.',
-        trivia: 'It was the first day shoot and we planned to start at 6am but due to several reasons even at 11am we didn’t take a single take. When everything is set and when am about to start the record button, some department officials entered and seized all our equipments since it was a no-trespassing central government property. The whole shoot was spoilt and it caused around 25k loss which includes Equipment rentals, fine paid and also the unfortunate loss of the car key of Samir Ahmed FL. This was my first project shot on a 4K camera, the first project worked on my new Mac setup and the very first project I graded using DaVinci Resolve.',
+        trivia: 'Day 1 of shoot was a loss of around 20k since we were shooting in a no-trespassing area and our equipments got seized by the Vigilance department, so we ought to reshoot again. It was my first Music Video and first project worked on my brand new Mac Pro.',
         crew: {
             Director: 'Samir Ahmed FL',
             "Original Music": "Stanley Xavier",
