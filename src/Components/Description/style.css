@@ -115,10 +115,6 @@ background-color: transparent;
 }
 
 @media only screen and (min-width: 360px) and (max-width:800px){
-    .descTrivia{
-        display: none;
-       
-    }
     
     .descCloseIcon{
         width: 30px;
@@ -129,34 +125,14 @@ background-color: transparent;
     }
 
     
-.descPlayIcon{
-    height:30px; 
-    width:30px;
-    color:red; 
-    margin-right:1vw;
-}
+    .descPlayIcon{
+        height:30px; 
+        width:30px;
+        color:red; 
+        margin-right:1vw;
+    }
 
 
-
-.descBody{ 
-    font-size: 13px !important;
-} 
-
-.descTrivia{
-    font-size: 13px;
-}
-
- .descBodyText{
-    font-size: 13px;     
-} 
-
-.crewDesignation{
-    font-size:13px;
-}
-
-.crewMember{
-    font-size:13px; 
-}
 
 
 }

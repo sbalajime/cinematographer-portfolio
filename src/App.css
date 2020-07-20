@@ -99,6 +99,21 @@
 
 
  @media only screen and (min-width: 360px) and (max-width:800px){
+  .descCloseIcon{
+      width: 30px;
+      height: 30px;  
+      margin-top: 5px;   
+      position: relative;
+      right: 10px; 
+  }
+
+
+  .descPlayIcon{
+      height:30px; 
+      width:30px;
+      color:red; 
+      margin-right:1vw;
+  }
   #videoMessage {
     padding: 10px !important;
   }
@@ -123,19 +138,19 @@
 }
 
 @media only screen and (min-width: 200px) and (max-width: 360px){
-.react-photo-gallery--gallery img{
-  width: 45vw;
-  height: 45vw;
-  margin: 5px !important;
+  .react-photo-gallery--gallery img{
+    width: 45vw;
+    height: 45vw;
+    margin: 5px !important;
 
-}
-.react-photo-gallery--gallery > div {
-  justify-content: center;
-}
+  }
+  .react-photo-gallery--gallery > div {
+    justify-content: center;
+  }
 
-.descBody, .crewDesignation, .descBodyText, .descFilmName, .crewMember{
-  font-size: 15px !important;
-}
+  .descBody, .crewDesignation, .descBodyText, .descFilmName, .crewMember{
+    font-size: 15px !important;
+  }
 
 
 }
