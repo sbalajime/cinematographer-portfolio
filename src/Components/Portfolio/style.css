@@ -1,0 +1,36 @@
+.portfolioContainer{
+    flex-direction:column; 
+    margin-top:10vh;
+}
+/*
+.cardContainer{
+    border-bottom:2px solid white;
+    border-top:1px solid white; 
+    border-radius:50px;
+}
+*/
+.yearTitle{ 
+    letter-spacing: .10em;
+    font-size: 2.7vw;
+    font-weight: 100; 
+    text-align:center; 
+    width:100%;
+    justify-content:center;
+    margin-bottom:5vh;
+    margin-top:5vh; 
+}
+
+.multipleCards{ 
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
+@media screen and (max-width:800px){
+    .yearTitle{        
+        font-size: 5.4vw;
+    }
+}

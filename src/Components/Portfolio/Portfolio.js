@@ -1,20 +1,61 @@
 import React, { Component } from 'react';
 import Card from '../Card/Card';
-import films from '../VideoData/data';
+// import films from '../VideoData/data';
 import _map from 'lodash/map';
 import ScrollableAnchor from 'react-scrollable-anchor'
+import Description from '../Description/Description.js';
+import './style.css';
 
 class Portfolio extends Component {
-    render(){
-        return(
-            <ScrollableAnchor id={'portfolio'}>
-                <div>
-                    <span style={{ fontSize: 35, fontWeight: 100 }}>PORTFOLIO</span>
-                    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent:'center'}}>
-                        {_map(films, (film, index) => <Card film={film} key={index}/>)}
+    constructor(props) {
+        super(props);
+        this.state = {
+            isCarousel: false
+        }
+    }
+
+    componentDidMount() {
+        if (this.scrollContainer.scrollWidth > this.scrollContainer.offsetWidth) {
+            this.setState({ isCarousel: true });
+        }
+    }
+
+    handleScrollLeft = () => {
+        // this.scrollContainer.scrollLeft -= 100;
+        this.scrollContainer.scrollBy({
+            // could be negative value
+            left: -500,
+            behavior: 'smooth'
+        })
+    }
+    handleScrollRight = () => {
+        // this.scrollContainer.scrollLeft += 100;
+        this.scrollContainer.scrollBy({
+            left: 500, // could be negative value 
+            behavior: 'smooth'
+        })
+    }
+
+    render() {
+        const { data, title, selectFilm } = this.props;
+
+        const { selectedFilm } = this.props;
+        return (
+            <div key={title}>
+                <ScrollableAnchor id={'portfolio'} key={title}>
+                    <div className="portfolioContainer" key={title}>
+                        <div className="cardContainer">
+                            <center className="yearTitle">{title}</center>
+                            <div className="flexRowAJCenter">
+                                <div ref={el => this.scrollContainer = el} className="multipleCards">
+                                    {_map(data, (film, index) => <Card film={film} key={index} selectFilm={selectFilm} />)}
+                                </div>
+                            </div>
+                        </div>
+                        {selectedFilm.year === title ? <Description selectedFilm={selectedFilm} close={selectFilm} /> : null}
                     </div>
-                </div>
-            </ScrollableAnchor>
+                </ScrollableAnchor>
+            </div>
         )
     }
 }

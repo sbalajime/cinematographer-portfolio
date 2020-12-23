@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.appWrapper{
+  padding-top:20px;
+  width:100%;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
@@ -21,8 +26,131 @@
 .App-intro {
   font-size: large;
 }
+.btnContainer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+ @media screen and (max-width: 600px) {
+   .mainContainer{
+     height:auto;
+     margin:10px;
+     width:94%;
+   }
+   .appWrapper{
+    padding:0px;
+    padding-top:10px;
+  }
+  video {
+    transform:scale(5);
+  }
+  .card{
+    margin:20px;
+  }
+
+  .descPlayButton{
+    padding: 0px 5px 0px 5px !important;
+    position: relative;
+    left: 50px;
+
+  }
+  
+
+ }
+
+ @media only screen and (min-width: 1500px) {
+
+  .descFilmName{
+    font-size: 40px !important;
+    letter-spacing: 20px;
+  }
+  .descFilmType, .descGenre{
+    font-size: 30px !important;
+  }
+  .descDuration {
+    font-size:30px !important;
+  }
+
+  .descBody, .crewDesignation,  .crewMember, .descBodyText {
+    font-size: 33px !important;
+  }
+
+  .descPlayButton {
+    font-size: 33px !important;
+    height: 70px !important;
+    padding: 10px 30px 10px 30px !important;
+  }
+
+  .myJourney p {
+    font-size: 25px !important;
+  }
+
+  .menuItem {
+    font-size: 80px;
+  }
+
+ }
+
+
+ @media only screen and (min-width: 360px) and (max-width:800px){
+  .descCloseIcon{
+      width: 30px;
+      height: 30px;  
+      margin-top: 5px;   
+      position: relative;
+      right: 10px; 
+  }
+
+
+  .descPlayIcon{
+      height:30px; 
+      width:30px;
+      color:red; 
+      margin-right:1vw;
+  }
+  #videoMessage {
+    padding: 10px !important;
+  }
+  .descFilmName{
+    font-size: 23px !important;
+    letter-spacing:15px;
+  }
+  .descFilmType, .descGenre{
+    font-size: 20px !important;
+  }
+
+  .descDuration {
+    font-size:20px !important;
+  }
+
+  .descBody, .crewDesignation,  .crewMember, .descBodyText {
+    font-size: 17px !important;
+  }
+  .roles {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 360px){
+  .react-photo-gallery--gallery img{
+    width: 45vw;
+    height: 45vw;
+    margin: 5px !important;
+
+  }
+  .react-photo-gallery--gallery > div {
+    justify-content: center;
+  }
+
+  .descBody, .crewDesignation, .descBodyText, .descFilmName, .crewMember{
+    font-size: 15px !important;
+  }
+
+
 }

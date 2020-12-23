@@ -1,0 +1,3 @@
+export const data ={
+    "text":"Photography and Painting were my initial intrests during my school days. After entering the college, I got an opportunity to use one of my friend’s basic DSLR and I was amazed by how a picture looks way more cooler in DSLRs from normal fancy digicams. \n Now am an Independent Cinematographer, Editor and DI Colourist of over 25 million viewership on Youtube Community !"
+}

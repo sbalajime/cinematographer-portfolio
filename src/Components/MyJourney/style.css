@@ -1,0 +1,56 @@
+
+
+.myJourney{
+   width: auto;
+}
+
+.myJourney p {
+    font-size: 20px;
+    margin:auto;
+    margin-top: 10px
+}
+
+.myImg{
+    margin-left: 5%;
+    display: inline-block;  
+    width: 35vw;    
+    height: auto;
+    border-radius: 10px;
+}
+
+.myContent{
+    
+    display: inline-block;
+    width: 45vw;
+    height: auto;
+    padding: 2%;
+}
+
+.myJourney img{
+    border-radius: 5px;
+}
+
+.menuItem{
+    letter-spacing: .10em;
+}
+
+@media screen and (max-width:800px){
+   
+.myImg{
+    
+    display: none;
+    width:75%;
+    padding: 5%;
+    height: 350px;
+}
+
+.myContent{
+    
+    display: block;
+    width: 90%;
+    padding: 2%;
+
+}
+   
+ 
+}

@@ -1,19 +1,26 @@
 {
   "name": "cinematographer-portfolio",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
-    "lodash": "^4.17.10",
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "lodash": "^4.17.15",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-icons": "^3.10.0",
+    "react-modal": "^3.11.2",
+    "react-photo-gallery": "^8.0.0",
+    "react-reveal-text": "^0.1.1",
     "react-scripts": "1.1.4",
     "react-scrollable-anchor": "^0.6.1",
-    "react-social-icons": "^3.0.0",
-    "react-video-cover": "^1.2.0"
+    "react-social-icons": "^4.1.0",
+    "react-tabs": "^3.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && gulp deploy",
+    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "gulp deploy"
