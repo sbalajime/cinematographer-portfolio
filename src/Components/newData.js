@@ -351,6 +351,49 @@ const filmData = {
             Lens: 'CP 3 Lens kit | HR Zoom',
             Lights: 'S60 Skypanel | S30 Skypanel | Digitek DRL 18',
         }
+    },
+    {
+        name: 'SINGLE 3',
+        videoId: 'qs0-cg-_ntE',
+        thumbnail: '0',
+        trailer: 'GmTfx6UAnbc',
+        sampleVideo: 'single_3.mp4',
+        year: '2020', type: 'MUSIC VIDEO',
+        genre: 'SAD LOVE',
+        duration: '06:25',
+        summary: 'The emotional travel of a middle class boy who lost his relationship with his girl and the reason behind that was just money.',
+        ////personalNote: '',
+        trivia: 'This is officially my final Music Video collabration with Samir Ahmed FL, since we are planning for more bigger things.',
+        crew: {
+            Director: 'Samir Ahmed FL',
+            "Aerial Cinematography": "Anandh Abin",
+            Music: "Vicky",
+            Vocals: ["Dhinesh Nagarajan", "Santhosh"],
+            Feat: ["Samir Ahmed FL", "Janani Ashok Kumar"],
+            Lyrics: "Grammathu Pasanga (Santhosh)",
+            
+        }
+    },
+    {
+        name: 'EN UYIR THOZHA',
+        videoId: 'dpAgdN3jH3w',
+        thumbnail: '0',
+        trailer: 'S_o04qHBWtQ',
+        sampleVideo: 'en_uyir_thozha.mp4',
+        year: '2020', type: 'MUSIC VIDEO',
+        genre: 'MOTIVATION',
+        duration: '03:33',
+        summary: 'A motivational anthem for all the youngsters out there through an inspiring icon.',
+        ////personalNote: '',
+        trivia: 'This is the first ever Video appearance for Captain Vijayakanth’s Son, Vijaya Prabhakaran.',
+        crew: {
+            Director: "Jeffrey Jonathan",
+            "Aerial Cinematography": "J. Leo Nardo Davinci",
+            Music: "Jeffrey Jonathan",
+            Vocals: "Vijaya Prabhakaran",
+            Feat: ["Vijaya Prabhakaran"],
+            Lyrics: "Puratchi Nambi"
+        }
     }]
 }
 
