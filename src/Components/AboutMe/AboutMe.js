@@ -53,7 +53,7 @@ class AboutMe extends Component {
                         SHOW REEL
                     </center>
                     <div class="video-container">
-                        <iframe  src="https://player.vimeo.com/video/279994170" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+                        <iframe title="showreel" src="https://player.vimeo.com/video/279994170" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
                     </div>
                 </div>
 
