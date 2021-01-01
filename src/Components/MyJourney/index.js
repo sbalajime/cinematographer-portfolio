@@ -25,7 +25,7 @@ const MyJourney = () => {
                     After that I made few short films during my college days which were appreciated and recognised by people inside and outside of my college so it gave me confidence to pursue this skill as my mainstream career.
                     </p>
                 <p>
-                    Now am an Independent Cinematographer, Editor and DI Colourist of over 25 million viewership on Youtube Community !
+                    Now am an Independent Cinematographer, Editor and Colourist of over 25 million viewership on Youtube Community !
                     </p>
             </div>
         </div>
