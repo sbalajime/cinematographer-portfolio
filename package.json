@@ -1,6 +1,6 @@
 {
   "name": "cinematographer-portfolio",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
@@ -9,6 +9,7 @@
     "lodash": "^4.17.15",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-ga": "^3.3.0",
     "react-icons": "^3.10.0",
     "react-modal": "^3.11.2",
     "react-photo-gallery": "^8.0.0",
