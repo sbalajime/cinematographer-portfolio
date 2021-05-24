@@ -51,7 +51,7 @@ class App extends Component {
 				<ScrollableAnchor id={'portfolio'}>
 					<div className="portfolioSection">
 						<center className="menuItem">PORTFOLIO</center>
-						{Object.keys(newData).map(year => Number(year)).sort().reverse().map((data, index) => <Portfolio data={newData[data]} key={index} title={data} selectedFilm={selectedFilm} selectFilm={this.selectFilm} />)}
+						{Object.keys(newData).map(year => Number(year)).sort().reverse().map(year => String(year)).map((year, index) => <Portfolio data={newData[year]} key={index} title={year} selectedFilm={selectedFilm} selectFilm={this.selectFilm} />)}
 					</div>
 				</ScrollableAnchor>
 				<ScrollableAnchor id={'gallery'}>
