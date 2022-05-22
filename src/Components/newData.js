@@ -394,7 +394,27 @@ const filmData = {
             Feat: ["Vijaya Prabhakaran"],
             Lyrics: "Puratchi Nambi"
         }
-    }]
+    }],
+    2022: [{
+        name: 'KARUPAZHAGI',
+        videoId: 'thHcg-DLSfA',
+        thumbnail: '0',
+        trailer: 'e_ZFCXev6PQ',
+        sampleVideo: 'Karupazhagi.mp4',
+        year: '2022', type: 'MUSIC VIDEO',
+        genre: 'FOLK DANCE',
+        duration: '06:30',
+        summary: "Karupazhagi takes you into the journey of a heart warming love story between two Dusky beauties and the song takes it's pride for South Indian Colour through it's lyrics.",
+        //personalNote: '',
+        trivia: 'After 2 years of Lockdown between countries it was once again my second Singapore collaboration. The outdoor portions of the song was entirely shot with available natural light source.',
+        crew: {
+            Director: 'Adithya Tangirala',
+            Music: "Satthia",
+            Singer:"Satthia | Rakshita Suresh",
+            Feat: ["Satthia Nallaiah", "Teja Venkatesh"],
+            Lyrics: "Raghadeepan | Oviya Oommapathy"
+        },
+    }] 
 }
 
 export default filmData;
