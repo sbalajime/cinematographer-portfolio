@@ -36,7 +36,7 @@ class App extends Component {
 	componentDidMount() {
 		fetch(`https://assets.yuvanselva.in/sitedata.json`)
 			.then(resp => resp.json())
-			.then(resp => setTimeout(() => this.setState({ data: resp }), 10000))
+			.then(resp => this.setState({ data: resp }))
 	}
 	selectFilm = film => {
 		const { selectedFilm } = this.state;
