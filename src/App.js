@@ -6,7 +6,6 @@ import MyJourney from './Components/MyJourney';
 import { configureAnchors } from 'react-scrollable-anchor';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faIgloo, faChevronRight, faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import newData from './Components/newData';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import Gallery from "react-photo-gallery";
 import photos from './Components/photos';
@@ -14,6 +13,7 @@ import spot from './Components/spot';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import Footer from './Components/Footer';
+import ReactLoading from 'react-loading';
 
 library.add(faIgloo)
 library.add(faChevronRight)
@@ -28,10 +28,16 @@ class App extends Component {
 		super(props);
 		this.state = {
 			selectedFilm: {},
-			photo: ''
+			photo: '',
+			data: null
 		}
 	}
 
+	componentDidMount() {
+		fetch(`https://assets.yuvanselva.in/sitedata.json`)
+			.then(resp => resp.json())
+			.then(resp => setTimeout(() => this.setState({ data: resp }), 10000))
+	}
 	selectFilm = film => {
 		const { selectedFilm } = this.state;
 		if (film && (film.name !== selectedFilm.name)) {
@@ -42,7 +48,7 @@ class App extends Component {
 
 
 	render() {
-		const { selectedFilm } = this.state;
+		const { selectedFilm, data } = this.state;
 		return (
 			<div className="appWrapper">
 				<div className="mainContainer">
@@ -51,7 +57,8 @@ class App extends Component {
 				<ScrollableAnchor id={'portfolio'}>
 					<div className="portfolioSection">
 						<center className="menuItem">PORTFOLIO</center>
-						{Object.keys(newData).map(year => Number(year)).sort().reverse().map(year => String(year)).map((year, index) => <Portfolio data={newData[year]} key={index} title={year} selectedFilm={selectedFilm} selectFilm={this.selectFilm} />)}
+						{data ? Object.keys(data).map(year => Number(year)).sort().reverse().map(year => String(year)).map((year, index) => <Portfolio data={data[year]} key={index} title={year} selectedFilm={selectedFilm} selectFilm={this.selectFilm} />) : <div className='spinner'><ReactLoading type={"spin"} color={"white"} height={'5%'} width={'5%'} />
+						</div>}
 					</div>
 				</ScrollableAnchor>
 				<ScrollableAnchor id={'gallery'}>

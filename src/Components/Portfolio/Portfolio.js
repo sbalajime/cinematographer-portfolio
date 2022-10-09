@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Card from '../Card/Card';
-// import films from '../VideoData/data';
 import _map from 'lodash/map';
 import ScrollableAnchor from 'react-scrollable-anchor'
 import Description from '../Description/Description.js';
