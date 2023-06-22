@@ -47,13 +47,13 @@ class AboutMe extends Component {
                         CHECK THIS OUT!
                     </center>
                     <div class="video-container">
-                        <iframe title="recent-work" src="https://www.youtube.com/embed/_BFp2UAMtYQ?loop=1&autoplay=1&control=0&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe title="recent-work" src="https://www.youtube.com/embed/_BFp2UAMtYQ?autoplay=1&playlist=_BFp2UAMtYQ&loop=1&control=0&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <center className="menuItem">
                         SHOWREEL
                     </center>
                     <div class="video-container">
-                        <iframe title="showreel" src="https://www.youtube.com/embed/b-PYpziav9A?loop=1&autoplay=1&control=0&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <iframe title="showreel" src="https://www.youtube.com/embed/b-PYpziav9A?autoplay=1&playlist=b-PYpziav9A&loop=1&control=0&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                     </div>
                 </div>
 
